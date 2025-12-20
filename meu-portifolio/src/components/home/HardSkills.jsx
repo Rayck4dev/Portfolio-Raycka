@@ -10,14 +10,15 @@ import {
 export default function HardSkills() {
   return (
     <section
-      id="hardskills"
-      className="min-h-screen relative flex flex-col items-center px-6 py-24 overflow-hidden bg-black"
+    
+    id="hardskills"
+    className="min-h-screen relative flex flex-col items-center px-6 py-24 overflow-hidden bg-black"
     >
       <div className="absolute right-0 top-0 w-[300px] h-full bg-neonYellow/20 blur-[150px] pointer-events-none"></div>
 
       <div className="absolute inset-0 bg-gradient-to-b from-neonYellow/10 via-black to-black pointer-events-none"></div>
 
-      <div className="absolute inset-0 opacity-10 bg-[linear-gradient(transparent_95%,rgba(255,255,255,0.1)_100%)] bg-[length:100%_4px] pointer-events-none"></div>
+      <div className="absolute inset-0 opacity-10 bg-[linear-gradient(transparent_95%,rgba(255,255,255,01)_100%)] bg-[length:100%_4px] pointer-events-none"></div>
 
       <Particles />
 
@@ -25,47 +26,49 @@ export default function HardSkills() {
         Hard Skills
       </h2>
 
-      <p className="relative z-10 text-white font-orbitron font-bold text-center mb-12 animate-fadeUp">
+    <div className="hidden font-bricolage"></div>
+
+      <p className="text-white/70 text-center max-w-2xl font-bricolage text-base mb-12 px-4">
         {" "}
         Competências técnicas que aplico para construir aplicações modernas,
-        eficientes e bem estruturadas.
+        eficientes e bem estruturadas
       </p>
 
       <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 w-full max-w-5xl">
         <SkillCard
           icon={<FaCode />}
           title="Desenvolvimento Front-End"
-          desc="Criação de interfaces modernas, responsivas e acessíveis."
+          desc="Criação de interfaces modernas, responsivas e acessíveis"
         />
 
         <SkillCard
           icon={<FaServer />}
           title="Desenvolvimento Back-End"
-          desc="APIs REST, lógica de negócio e integrações."
+          desc="APIs REST, lógica de negócio e integrações"
         />
 
         <SkillCard
           icon={<FaDatabase />}
           title="Banco de Dados"
-          desc="Modelagem, consultas SQL e integração com aplicações."
+          desc="Modelagem, consultas SQL e integração com aplicações"
         />
 
         <SkillCard
           icon={<FaCubes />}
           title="Arquitetura de Componentes"
-          desc="Organização, reuso e escalabilidade no front-end."
+          desc="Organização, reuso e escalabilidade no front-end"
         />
 
         <SkillCard
           icon={<FaCloudUploadAlt />}
           title="Deploy & Hospedagem"
-          desc="Publicação de aplicações em produção (Vercel, Render, etc.)."
+          desc="Publicação de aplicações em produção"
         />
 
         <SkillCard
           icon={<FaTools />}
           title="Boas Práticas"
-          desc="Versionamento, clean code e otimização de performance."
+          desc="Versionamento, clean code e otimização de performance"
         />
       </div>
     </section>
@@ -91,7 +94,7 @@ function SkillCard({ icon, title, desc }) {
         {title}
       </h3>
 
-      <p className="text-techGray text-sm">{desc}</p>
+      <p className="text-white mt-4 text-sm font-bricolage font-bold">{desc}</p>
     </div>
   );
 }

@@ -11,18 +11,18 @@ import { useEffect } from "react";
 
 export default function Home() {
   useEffect(() => {
-    document.title = "PORTIFÓLIO";
+    document.title = "Raycka Castro | FullStack Developer";
   }, []);
 
   return (
     <main>
       <Navbar />
       <Hero />
+      <FeaturedProjects />
       <TechStack />
       <SoftSkills />
       <HardSkills />
       <AboutMe />
-      <FeaturedProjects />
       <Footer />
     </main>
   );

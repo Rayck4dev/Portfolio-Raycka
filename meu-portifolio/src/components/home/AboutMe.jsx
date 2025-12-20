@@ -31,21 +31,21 @@ export default function AboutMe() {
           />
         </div>
 
-        <div className="flex-1 text-white font-orbitron font-bold text-md leading-relaxed">
-          <p className="mb-6">
+        <div className="flex-1 text-white font-bricolage font-bold text-md leading-relaxed">
+          <p className="text-white/70 max-w-2xl font-bricolage text-base mb-4 px-4">
             Olá! Meu nome é Raycka e sou uma desenvolvedora apaixonada por criar
             interfaces modernas, funcionais e visualmente marcantes. Meu foco é
             transformar ideias em experiências digitais fluidas e intuitivas.
           </p>
 
-          <p className="mb-6">
+          <p className="text-white/70 max-w-2xl font-bricolage text-base mb-4 px-4">
             Trabalho com desenvolvimento Front-End e Back-End, sempre buscando
             escrever código limpo, organizado e escalável. Gosto de explorar
             novas tecnologias todos os dias, entender como as coisas funcionam
             por trás dos bastidores e evoluir constantemente como profissional.
           </p>
 
-          <p>
+          <p className="text-white/70 max-w-2xl font-bricolage text-base mb-4 px-4">
             Além da parte técnica, valorizo muito a colaboração, comunicação e
             criatividade. Acredito que grandes projetos nascem quando pessoas
             unem suas habilidades e constroem algo incrível juntas.

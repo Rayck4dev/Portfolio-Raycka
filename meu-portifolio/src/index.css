@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Orbitron:wght@400..900&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -8,3 +9,27 @@ html {
   scroll-behavior: smooth;
 }
 
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-14px); }
+  100% { transform: translateY(0px); }
+}
+
+.nav-active {
+  position: relative;
+}
+
+.nav-active::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(168, 85, 247, 0.25); /* neonPurple suave */
+  filter: blur(12px);
+  border-radius: 6px;
+  z-index: -1;
+}

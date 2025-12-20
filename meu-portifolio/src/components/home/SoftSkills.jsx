@@ -25,7 +25,7 @@ export default function SoftSkills() {
         Soft Skills
       </h2>
 
-      <p className="relative z-10 text-white font-orbitron font-bold text-center mb-12 animate-fadeUp">
+      <p className="text-white/70 text-center max-w-2xl font-bricolage text-base mb-12 px-4">
         Competências comportamentais que fortalecem minha atuação como
         desenvolvedora e potencializam cada projeto
       </p>

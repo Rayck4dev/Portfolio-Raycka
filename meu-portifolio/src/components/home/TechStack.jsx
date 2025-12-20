@@ -37,7 +37,7 @@ export default function TechStack() {
         Technologies
       </h2>
 
-      <p className="relative z-10 text-white font-orbitron font-bold text-center mb-14 animate-fadeUp">
+      <p className="text-white/70 text-center max-w-2xl font-bricolage text-base mb-12 px-4">
         Tecnologias que estudo e aplico para construir interfaces modernas,
         sistemas eficientes e aplicações completas
       </p>
@@ -129,7 +129,7 @@ function TechCard({ icon, name, color }) {
         hover:border-${color} hover:shadow-[0_0_20px_var(--tw-shadow-color)]
         transition-all duration-300 cursor-pointer
         hover:-translate-y-2 hover:rotate-1
-      `}
+        `}
       style={{ "--tw-shadow-color": "currentColor" }}
     >
       <div className={`text-4xl mb-3 text-${color} drop-shadow-[0_0_10px]`}>

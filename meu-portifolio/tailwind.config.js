@@ -4,22 +4,32 @@ export default {
   theme: {
     extend: {
       colors: {
-        neonPurple: "#A259FF",
-        neonPink: "#FF4D8D",
-        neonBlue: "#00C2FF",
-        neonRed: "#FF0000",
-        neonGreen: "#00ff00",
+        neonPink: "#FF00A8",
+        neonGreen: "#00FF9F",
         neonOrange: "#FFA500",
-        neonYellow: "#FFFF00",
-        darkBg: "#0A0A0A",
-        techGray: "#1E1E1E",
+        neonPurple: "#A020F0",
+        neonBlue: "#00CFFF",
+        neonCyan: "#40E0D0",
+        neonYellow: "#FFFF33",
+        neonRed: "#FF3131",
+        neonMagenta: "#FF00FF",
+        neonTeal: "#00FFD1",
+        neonLime: "#BFFF00",
+        neonGold: "#FFD700",
       },
-
       fontFamily: {
         orbitron: ["Orbitron", "sans-serif"],
         audiowide: ["Audiowide", "sans-serif"],
-        pressStart: ["Press Start 2P", "cursive"],
+        bricolage: ["Bricolage Grotesque", "sans-serif"],
       },
+      keyframes: {
+        fall: {
+          "0%": { transform: "translateY(0)", opacity: 0 },
+          "50%": { opacity: 1 },
+          "100%": { transform: "translateY(100vh)", opacity: 0 },
+        },
+      },
+      animation: { fall: "fall linear infinite" },
     },
   },
   plugins: [],
