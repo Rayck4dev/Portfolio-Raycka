@@ -38,11 +38,10 @@ export const projectsData = {
       title: "Portfólio Dev",
       desc: "Site pessoal interativo para apresentar meus projetos e evolução como desenvolvedor, com design futurista e animações dinâmicas",
       color: "neonPurple",
-      link: "https://github.com/Rayck4dev/Portfolio",
+      link: "https://portfoliorayckacastro.netlify.app/",
       category: "Site Completo",
       image: "/home_port.png",
       techs: ["React", "TailwindCSS"],
-      code: "",
     },
     {
       title: "Delícias no Pote 2.0",
@@ -126,13 +125,12 @@ export const projectsData = {
   completos: [
     {
       title: "Portfólio Dev",
-      desc: "Site pessoal interativo para apresentar meus projetos e evolução como desenvolvedora, com design futurista e animações dinâmicas",
+      desc: "Site pessoal interativo para apresentar meus projetos e evolução como desenvolvedor, com design futurista e animações dinâmicas",
       color: "neonPurple",
-      link: "https://github.com/Rayck4dev/Portfolio",
+      link: "https://portfoliorayckacastro.netlify.app/",
       category: "Site Completo",
       image: "/home_port.png",
       techs: ["React", "TailwindCSS"],
-      code: "",
     },
     {
       title: "Delícias no Pote 2.0",
