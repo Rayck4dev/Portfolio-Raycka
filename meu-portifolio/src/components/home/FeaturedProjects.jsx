@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import PixelButton from "@/components/ui/PixelButton";
-import { projects } from "../../Types/projects";
+import { projects } from "@/types/projects.js";
 
 import { FaChevronLeft, FaChevronRight, FaTools } from "react-icons/fa";
 
