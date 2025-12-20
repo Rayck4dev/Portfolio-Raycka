@@ -17,7 +17,8 @@ Este espaço reflete minha evolução no mundo da programação e minha paixão 
 ## 📂 Projeto em destaque
 
 ### 🍨 [Delícias no Pote 2.0] 
-Primeira versão do catálogo digital **Delícias no Pote**, desenvolvida como projeto de extensão. 
+Primeira versão do catálogo digital **Delícias no Pote**, desenvolvida como projeto de extensão.
+
 ⚡ [Ver Projeto](https://deliciasnopoterm.netlify.app)
 🔗 [Ver Código](https://github.com/Rayck4dev/Projeto_Cardapio-Digital)
 
