@@ -101,14 +101,6 @@ export default function Projects() {
           items={projectsData.academicos}
           bg="bg-gradient-to-r from-neonOrange/20 to-neonMagenta/20"
         />
-        <Section
-          id="sistemas"
-          title="Sistemas"
-          icon="🧪"
-          intro="Ferramentas inteligentes criadas para resolver problemas específicos, aplicando tecnologia em cenários reais como piscicultura e gestão"
-          items={projectsData.sistemas}
-          bg="bg-gradient-to-r from-neonYellow/20 to-neonGreen/20"
-        />
 
         <Section
           id="completos"
