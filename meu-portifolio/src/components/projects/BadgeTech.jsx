@@ -1,6 +1,7 @@
 import { FaReact, FaJava, FaHtml5, FaCss3Alt } from "react-icons/fa";
 import { SiTailwindcss, SiSupabase, SiJavascript, SiCanva, SiPhp, SiMysql } from "react-icons/si";
-import { TbApi } from "react-icons/tb";
+import { TbApi, TbBrandNextjs } from "react-icons/tb";
+
 
 export default function BadgeTech({ tech }) {
   const iconMap = {
@@ -15,6 +16,7 @@ export default function BadgeTech({ tech }) {
     Java: <FaJava />,
     Php : <SiPhp />,
     "API REST": <TbApi />,
+    "NextJs": <TbBrandNextjs />,
   };
 
   const colorMap = {
@@ -29,6 +31,7 @@ export default function BadgeTech({ tech }) {
     Java: "text-neonRed border-neonRed",
     Php : "text-neonMagenta border-neonMagenta",
     "API REST": "text-neonOrange border-neonOrange",
+    "NextJs": "text-white border-white",
     Default: "text-white border-white",
   };
 

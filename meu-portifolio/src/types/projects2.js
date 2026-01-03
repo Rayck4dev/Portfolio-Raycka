@@ -19,18 +19,8 @@ export const projectsData = {
       soon: true,
       category: "Landing Page",
       image: "",
-      techs: ["HTML5", "CSS3"],
+      techs: ["NextJs", "TailwindCSS"],
       code: "",
-    },
-    {
-      title: "HormoFish",
-      desc: "Ferramenta inteligente para piscicultura, criada para automatizar cálculos hormonais e reduzir erros no manejo",
-      color: "neonYellow",
-      category: "Sistema",
-      image: "",
-      techs: ["React", "TailwindCSS", "API REST", "Supabase"],
-      code: "",
-      soon: true,
     },
   ],
   recentes: [
@@ -76,7 +66,7 @@ export const projectsData = {
       soon: true,
       category: "Landing Page",
       image: "",
-      techs: ["HTML5", "CSS3"],
+      techs: ["NextJs", "TailwindCSS"],
       code: "",
     },
     {
@@ -141,18 +131,6 @@ export const projectsData = {
       image: "/home_del.png",
       techs: ["React", "Supabase", "TailwindCSS"],
       code: "https://github.com/Rayck4dev/Cardapio-Digital_2.0",
-    },
-  ],
-  sistemas: [
-    {
-      title: "HormoFish",
-      desc: "Calculadora inteligente para piscicultura, desenvolvida para otimizar dosagens hormonais e apoiar produtores",
-      color: "neonYellow",
-      category: "Sistema",
-      image: "",
-      techs: ["React", "TailwindCSS", "API REST", "Supabase"],
-      code: "",
-      soon: true,
     },
   ],
 };

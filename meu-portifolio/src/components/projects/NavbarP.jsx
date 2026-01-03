@@ -13,7 +13,6 @@ export default function NavbarProjects() {
       "ecommerce",
       "landing",
       "academicos",
-      "sistemas",
       "completos",
     ];
 
@@ -39,7 +38,6 @@ export default function NavbarProjects() {
   return (
     <nav className="fixed top-0 left-0 w-full bg-black backdrop-blur-sm z-50">
       <div className="w-full px-6 py-4 flex items-center justify-between">
-
         <img src={DevLabLogo} alt="DEV LAB" className="w-32" />
 
         <ul className="flex items-center gap-8 text-white font-audiowide text-sm">
@@ -120,20 +118,6 @@ export default function NavbarProjects() {
               Academic
             </a>
           </li>
-
-          <li>
-            <a
-              href="#sistemas"
-              className={`${
-                active === "completos"
-                  ? "nav-active text-neonGreen"
-                  : "hover:text-neonGreen"
-              } transition`}
-            >
-              Systems
-            </a>
-          </li>
-          
           <li>
             <a
               href="#completos"
