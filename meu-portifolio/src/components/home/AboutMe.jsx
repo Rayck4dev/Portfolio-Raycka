@@ -1,3 +1,5 @@
+import fotoRaycka from "../../assets/Foto-Port_org.jpg";
+
 export default function AboutMe() {
   return (
     <section
@@ -25,7 +27,7 @@ export default function AboutMe() {
           "
         >
           <img
-            src="src/assets/Foto-Port_org.jpg"
+            src={fotoRaycka}
             alt="Foto Raycka"
             className="w-full h-full object-cover"
           />
