@@ -25,7 +25,7 @@ export default function AboutMe() {
           "
         >
           <img
-            src="src/assets/Foto-minha.jpeg"
+            src="src/assets/Foto-Port_org.jpg"
             alt="Foto Raycka"
             className="w-full h-full object-cover"
           />
