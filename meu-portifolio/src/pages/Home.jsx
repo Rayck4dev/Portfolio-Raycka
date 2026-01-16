@@ -5,6 +5,7 @@ import SoftSkills from "@/components/home/SoftSkills";
 import HardSkills from "@/components/home/HardSkills";
 import AboutMe from "@/components/home/AboutMe";
 import FeaturedProjects from "@/components/home/FeaturedProjects";
+import Contact from "../components/home/Contact";
 import Footer from "@/components/home/Footer";
 
 import { useEffect } from "react";
@@ -23,6 +24,7 @@ export default function Home() {
       <SoftSkills />
       <HardSkills />
       <AboutMe />
+      <Contact/>
       <Footer />
     </main>
   );

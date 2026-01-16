@@ -135,6 +135,18 @@ export default function Navbar() {
 
           <li>
             <a
+              href="#contact"
+              className={`${
+                active === "about"
+                  ? "nav-active text-neonPurple"
+                  : "hover:text-neonPurple"
+              } transition`}
+            >
+              Contact
+            </a>
+          </li>
+          <li>
+            <a
               href="https://www.linkedin.com/in/raycka-messa-de-castro-408264327"
               target="_blank"
               className="text-xl hover:text-neonBlue transition"
