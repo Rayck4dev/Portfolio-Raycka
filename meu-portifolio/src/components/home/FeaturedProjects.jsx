@@ -1,46 +1,22 @@
-import { useState, useEffect, useRef } from "react";
 import PixelButton from "@/components/ui/PixelButton";
 import { projects } from "@/types/projects.js";
-
-import { FaChevronLeft, FaChevronRight, FaTools } from "react-icons/fa";
+import { FaTools } from "react-icons/fa";
 
 export default function FeaturedProjects() {
-  const [index, setIndex] = useState(0);
-  const intervalRef = useRef(null);
-
-  const next = () => setIndex((prev) => (prev + 1) % projects.length);
-  const prev = () =>
-    setIndex((prev) => (prev - 1 + projects.length) % projects.length);
-
-  const startAutoplay = () => {
-    intervalRef.current = setInterval(next, 3000);
-  };
-
-  const stopAutoplay = () => {
-    clearInterval(intervalRef.current);
-  };
-
-  useEffect(() => {
-    startAutoplay();
-    return () => stopAutoplay();
-  }, []);
-
   return (
     <section
       id="featured"
-      className="py-24 bg-black relative overflow-hidden flex flex-col items-center"
-      onMouseEnter={stopAutoplay}
-      onMouseLeave={startAutoplay}
+      className="py-20 bg-black relative overflow-hidden flex flex-col items-center"
     >
       <div className="absolute left-0 top-0 w-[300px] h-full bg-neonCyan/20 blur-[150px] pointer-events-none"></div>
       <div className="absolute inset-0 bg-gradient-to-b from-neonCyan/10 via-black to-black pointer-events-none"></div>
       <div className="absolute inset-0 opacity-10 bg-[linear-gradient(transparent_95%,rgba(255,255,255,0.1)_100%)] bg-[length:100%_4px] pointer-events-none"></div>
 
-      <h2 className="text-5xl font-audiowide text-neonCyan mb-14 drop-shadow-[0_0_15px_#40E0D0]">
+      <h2 className="text-3xl sm:text-4xl lg:text-5xl font-audiowide text-neonCyan mb-8 sm:mb-14 drop-shadow-[0_0_15px_#40E0D0] text-center">
         Top Projects
       </h2>
 
-      <p className="text-white/70 text-center max-w-2xl font-bricolage text-base mb-12 px-4">
+      <p className="text-white/70 text-center max-w-2xl font-bricolage text-sm sm:text-base mb-8 sm:mb-12 px-4">
         Aqui estão alguns dos meus projetos favoritos — cada um com sua
         identidade visual, propósito e desafios únicos. Explore e veja como
         aplico design, código e criatividade em cada entrega.
@@ -48,118 +24,79 @@ export default function FeaturedProjects() {
 
       <Particles />
 
-      <div
-        className="relative w-[480px] h-[280px] mx-auto mt-12"
-        style={{ perspective: "950px" }}
-      >
-        <button
-          onClick={prev}
-          className={`
-            absolute left-[-70%] top-1/2 -translate-y-1/2 z-30
-            text-neonCyan text-3xl p-2 rounded-full
-            hover:text-white hover:scale-110 transition
-            drop-shadow-[0_0_10px_var(--tw-shadow-color)]
-          `}
-          style={{ "--tw-shadow-color": "var(--neonCyan)" }}
-        >
-          <FaChevronLeft />
-        </button>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-4 w-full max-w-6xl">
+        {projects.map((p) => (
+          <div
+            key={p.title}
+            className={`
+              flex flex-col items-center justify-between gap-4
+              rounded-xl border border-${p.color}/40 bg-black/40 backdrop-blur-md
+              hover:shadow-[0_0_25px_var(--tw-shadow-color)]
+              hover:border-${p.color}
+              cursor-pointer p-6
+            `}
+            style={{
+              "--tw-shadow-color": `var(--${p.color})`,
+            }}
+          >
+            {p.title === "Eventix" && (
+              <span
+                className="text-xs font-bold text-neonOrange bg-black/60 px-2 py-1 rounded shadow-[0_0_8px_var(--tw-shadow-color)]"
+                style={{ "--tw-shadow-color": "var(--neonOrange)" }}
+              >
+                🎓 Trabalho Acadêmico
+              </span>
+            )}
 
-        <button
-          onClick={next}
-          className={`
-            absolute right-[-70%] top-1/2 -translate-y-1/2 z-30
-            text-neonCyan text-3xl p-2 rounded-full
-            hover:text-white hover:scale-110 transition
-            drop-shadow-[0_0_10px_var(--tw-shadow-color)]
-          `}
-          style={{ "--tw-shadow-color": "var(--neonCyan)" }}
-        >
-          <FaChevronRight />
-        </button>
+            {p.category && (
+              <span
+                className="text-xs font-bold bg-black/60 px-2 py-1 rounded shadow-[0_0_8px_var(--tw-shadow-color)] mb-2"
+                style={{
+                  "--tw-shadow-color": `var(--${p.color})`,
+                  color: `var(--${p.color})`,
+                }}
+              >
+                {p.category}
+              </span>
+            )}
 
-        {projects.map((p, i) => {
-          const angle = (360 / projects.length) * (i - index);
-          const visible = i === index;
+            {p.soon ? (
+              <FaTools className="text-3xl sm:text-4xl text-neonCyan drop-shadow-[0_0_12px_var(--tw-shadow-color)]" />
+            ) : (
+              <img
+                src={p.icon}
+                alt={`${p.title} icon`}
+                className="w-12 h-12 sm:w-14 sm:h-14 drop-shadow-[0_0_12px_var(--tw-shadow-color)]"
+              />
+            )}
 
-          return (
-            <div
-              key={p.title}
-              className={`
-                absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center gap-2
-                rounded-xl border border-${
-                  p.color
-                }/40 bg-black/40 backdrop-blur-md
-                transition-transform duration-700
-                ${visible ? "z-10 scale-100" : "z-0 scale-90 opacity-40"}
-                hover:shadow-[0_0_25px_var(--tw-shadow-color)]
-                hover:border-${p.color}
-                cursor-pointer
-              `}
-              style={{
-                "--tw-shadow-color": `var(--${p.color})`,
-                transform: `
-                  rotateY(${angle}deg)
-                  translateZ(160px)
-                `,
-              }}
+            <h3
+              className={`text-lg sm:text-xl lg:text-2xl font-audiowide text-${p.color}`}
             >
-              {p.title === "Eventix" && (
-                <span
-                  className="text-xs font-bold text-neonOrange bg-black/60 px-2 py-1 rounded shadow-[0_0_8px_var(--tw-shadow-color)] mb-1"
-                  style={{ "--tw-shadow-color": "var(--neonOrange)" }}
-                >
-                  🎓 Trabalho Acadêmico
-                </span>
-              )}
+              {p.title}
+            </h3>
 
-              {p.category && (
-                <span
-                  className="absolute top-2 right-2 text-xs font-bold bg-black/60 px-2 py-1 rounded shadow-[0_0_8px_var(--tw-shadow-color)]"
-                  style={{
-                    "--tw-shadow-color": `var(--${p.color})`,
-                    color: `var(--${p.color})`,
-                  }}
-                >
-                  {p.category}
-                </span>
-              )}
+            <p className="text-white/80 text-center font-bricolage text-xs sm:text-sm">
+              {p.desc}
+            </p>
 
+            <a href={p.link} target="_blank">
               {p.soon ? (
-                <FaTools className="text-4xl mb-4 text-neonCyan drop-shadow-[0_0_12px_var(--tw-shadow-color)]" />
+                <PixelButton
+                  color={p.title === "Pet Clini" ? "neonPink" : p.color}
+                >
+                  🚀 Em breve
+                </PixelButton>
+              ) : p.academic ? (
+                <PixelButton color={p.color}>
+                  🎓 Ver Trabalho Acadêmico
+                </PixelButton>
               ) : (
-                <img
-                  src={p.icon}
-                  alt={`${p.title} icon`}
-                  className="w-14 h-14 mb-4 drop-shadow-[0_0_12px_var(--tw-shadow-color)]"
-                />
+                <PixelButton color={p.color}>Ver mais</PixelButton>
               )}
-
-              <h3 className={`text-2xl font-audiowide text-${p.color} mb-1`}>
-                {p.title}
-              </h3>
-              <p className="text-white/80 text-center px-4 font-bricolage text-sm mb-2">
-                {p.desc}
-              </p>
-
-              <a href={p.link} target="_blank">
-                {p.soon ? (
-                  <PixelButton
-                    color={p.title === "Pet Clini" ? "neonPink" : p.color}
-                  >
-                    🚀 Em breve
-                  </PixelButton>
-                ) : p.academic ? (
-                  <PixelButton color={p.color}>
-                    🎓 Ver Trabalho Acadêmico
-                  </PixelButton>
-                ) : (
-                  <PixelButton color={p.color}>Ver mais</PixelButton>
-                )}
-              </a>
-            </div>
-          );
-        })}
+            </a>
+          </div>
+        ))}
       </div>
     </section>
   );

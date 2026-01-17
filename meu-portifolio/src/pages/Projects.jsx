@@ -78,14 +78,6 @@ export default function Projects() {
           bg="bg-gradient-to-r from-neonPink/20 to-neonOrange/20"
         />
         <Section
-          id="ecommerce"
-          title="E-commerce"
-          icon="🛒"
-          intro="Plataformas de vendas online criadas para simular lojas virtuais completas, com foco em escalabilidade e fluxo de compra"
-          items={projectsData.ecommerce}
-          bg="bg-gradient-to-r from-neonBlue/20 to-neonGold/20"
-        />
-        <Section
           id="landing"
           title="Landing Pages"
           icon="🌐"

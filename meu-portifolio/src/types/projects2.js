@@ -1,17 +1,6 @@
 export const projectsData = {
   desenvolvimento: [
     {
-      title: "Elite Vougue Store",
-      desc: "Versão totalmente em código de um e-commerce que antes era feito em WordPress. Agora com backend próprio, APIs REST e frontend em React para maior performance e escalabilidade",
-      color: "neonBlue",
-      link: "",
-      soon: true,
-      category: "E-commerce",
-      image: "",
-      techs: ["React", "TailwindCSS", "API REST", "Php", "MySql"],
-      code: "",
-    },
-    {
       title: "Pet Clini",
       desc: "Landing Page estática para pet shop, desenvolvida apenas com foco em design responsivo e experiência do usuário",
       color: "neonGreen",
@@ -19,7 +8,7 @@ export const projectsData = {
       soon: true,
       category: "Landing Page",
       image: "",
-      techs: ["NextJs", "TailwindCSS"],
+      techs: ["React", "TailwindCSS"],
       code: "",
     },
   ],
@@ -44,19 +33,6 @@ export const projectsData = {
       code: "https://github.com/Rayck4dev/Cardapio-Digital_2.0",
     },
   ],
-  ecommerce: [
-    {
-      title: "Elite Vougue Store",
-      desc: "Versão totalmente em código de um e-commerce que antes era feito em WordPress. Agora com backend próprio, APIs REST e frontend em React para maior performance e escalabilidade",
-      color: "neonBlue",
-      link: "",
-      soon: true,
-      category: "E-commerce",
-      image: "",
-      techs: ["React", "TailwindCSS", "API REST", "Php", "MySql"],
-      code: "",
-    },
-  ],
   landing: [
     {
       title: "Pet Clini",
@@ -66,7 +42,7 @@ export const projectsData = {
       soon: true,
       category: "Landing Page",
       image: "",
-      techs: ["NextJs", "TailwindCSS"],
+      techs: ["React", "TailwindCSS"],
       code: "",
     },
     {

@@ -33,7 +33,7 @@ export default function TechStack() {
 
       <div className="absolute inset-0 pointer-events-none opacity-10 bg-[linear-gradient(transparent_95%,rgba(255,255,255,0.1)_100%)] bg-[length:100%_4px]"></div>
 
-      <h2 className="relative z-10 text-5xl font-audiowide text-neonPurple mb-10 drop-shadow-[0_0_15px_#a855f7] animate-fadeUp">
+      <h2 className="relative z-10 text-3xl sm:text-4xl lg:text-5xl font-audiowide text-neonPurple mb-10 drop-shadow-[0_0_15px_#a855f7] animate-fadeUp">
         Technologies
       </h2>
 
@@ -44,7 +44,7 @@ export default function TechStack() {
 
       <Particles />
 
-      <div className="relative z-10 flex flex-col gap-20 w-full max-w-5xl">
+      <div className="relative z-10 flex flex-col gap-12 sm:gap-16 lg:gap-20 w-full max-w-5xl">
         {/* FRONT-END */}
         <Category
           title="Front-End"
@@ -83,7 +83,6 @@ export default function TechStack() {
         />
 
         {/* TOOLS */}
-
         <Category
           title="Tools & Others"
           color="neonRed"
@@ -107,7 +106,8 @@ function Category({ title, color, items }) {
         {title}
       </h3>
 
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+      {/* Alteração 1: grid adaptável */}
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 sm:gap-8">
         {items.map((tech) => (
           <TechCard
             key={tech.name}
@@ -125,17 +125,20 @@ function TechCard({ icon, name, color }) {
   return (
     <div
       className={`
-        group bg-black/40 border border-${color}/40 rounded-xl p-6 text-center text-white font-medium
+        group bg-black/40 border border-${color}/40 rounded-xl 
+        p-4 sm:p-6 text-center text-white font-medium
         hover:border-${color} hover:shadow-[0_0_20px_var(--tw-shadow-color)]
         transition-all duration-300 cursor-pointer
         hover:-translate-y-2 hover:rotate-1
-        `}
+      `}
       style={{ "--tw-shadow-color": "currentColor" }}
     >
-      <div className={`text-4xl mb-3 text-${color} drop-shadow-[0_0_10px]`}>
+      <div
+        className={`text-3xl sm:text-4xl mb-2 sm:mb-3 text-${color} drop-shadow-[0_0_10px]`}
+      >
         {icon}
       </div>
-      <span className="text-lg font-orbitron">{name}</span>
+      <span className="text-sm sm:text-lg font-orbitron">{name}</span>
     </div>
   );
 }
