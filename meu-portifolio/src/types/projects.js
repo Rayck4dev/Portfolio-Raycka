@@ -34,12 +34,4 @@ export const projects = [
     soon: true,
     category: "Landing Page",
   },
-  {
-    title: "Elite Vougue Store",
-    desc: "Versão totalmente em código de um e-commerce que antes era feito em WordPress. Agora com backend próprio, APIs REST e frontend em React para maior performance e escalabilidade",
-    color: "neonBlue",
-    soon: true,
-    academic: false,
-    category: "E-commerce",
-  },
 ];
