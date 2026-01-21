@@ -29,7 +29,7 @@ export default function FeaturedProjects() {
           <div
             key={p.title}
             className={`
-              flex flex-col items-center justify-between gap-4
+              flex flex-col items-center justify-center gap-4 text-center
               rounded-xl border border-${p.color}/40 bg-black/40 backdrop-blur-md
               hover:shadow-[0_0_25px_var(--tw-shadow-color)]
               hover:border-${p.color}
@@ -39,7 +39,7 @@ export default function FeaturedProjects() {
               "--tw-shadow-color": `var(--${p.color})`,
             }}
           >
-            {p.title === "Eventix" && (
+            {p.title === "Academico" && (
               <span
                 className="text-xs font-bold text-neonOrange bg-black/60 px-2 py-1 rounded shadow-[0_0_8px_var(--tw-shadow-color)]"
                 style={{ "--tw-shadow-color": "var(--neonOrange)" }}

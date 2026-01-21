@@ -1,6 +1,6 @@
 import IconDelicias from "@/assets/faviconDelicias.png.png";
 import IconPortfolio from "@/assets/favicon_RC.ico";
-import IconEventix from "@/assets/favicon-eventix.ico";
+import IconPetClini from "@/assets/petclinifavic.png";
 
 export const projects = [
   {
@@ -13,25 +13,29 @@ export const projects = [
   {
     title: "Portfólio Dev",
     desc: "Site pessoal interativo para apresentar meus projetos e evolução como desenvolvedor, com design futurista e animações dinâmicas",
-    link: "",
+    link: "https://portfoliorayckacastro.netlify.app",
     color: "neonPurple",
     icon: IconPortfolio,
   },
   {
-    title: "Eventix",
-    desc: "Plataforma acadêmica inspirada no Sympla, com 2 versões desencolvida para as matérias de DAPI e FRONTEND-FRAMEWORKS",
-    color: "neonOrange",
-    link: "https://github.com/Rayck4dev/Projeto_Eventix",
-    icon: IconEventix,
-    academic: true,
-    category: "Acadêmico",
-  },
-  {
     title: "Pet Clini",
     desc: "Landing Page estática para pet shop, desenvolvida apenas com foco em design responsivo e experiência do usuário",
-    soon: true,
     color: "neonGreen",
+    link: "https://github.com/Rayck4dev/Landing-Pages/tree/PetClini",
+    icon: IconPetClini,
+  },
+  {
+    title: "Corte Fino",
+    desc: "Landing Page estática para Barbearia, desenvolvida apenas com foco em design responsivo e experiência do usuário",
+    color: "neonYellow",
     soon: true,
-    category: "Landing Page",
+
+  },
+  {
+    title: "Piscicultura Magrão Alevinos",
+    desc: "Catálogo desenvolvido para a Piscicultura, com foco em apresentar as espécies vendidas e marketing digital",
+    color: "neonBlue",
+    soon: true,
+    
   },
 ];

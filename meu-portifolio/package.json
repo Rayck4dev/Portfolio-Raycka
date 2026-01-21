@@ -17,6 +17,7 @@
     "react-router-dom": "^7.10.1",
     "react-scroll": "^1.9.3",
     "react-tsparticles": "^2.12.2",
+    "swiper": "^12.0.3",
     "tsparticles": "^3.9.1"
   },
   "devDependencies": {

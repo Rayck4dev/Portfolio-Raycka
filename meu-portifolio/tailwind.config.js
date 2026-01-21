@@ -4,6 +4,7 @@ export default {
   theme: {
     extend: {
       colors: {
+        neonBrown: "964B00",
         neonPink: "#FF00A8",
         neonGreen: "#00FF9F",
         neonOrange: "#FFA500",

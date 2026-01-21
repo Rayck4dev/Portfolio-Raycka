@@ -1,26 +1,47 @@
 export const projectsData = {
   desenvolvimento: [
     {
-      title: "Pet Clini",
-      desc: "Landing Page estática para pet shop, desenvolvida apenas com foco em design responsivo e experiência do usuário",
-      color: "neonGreen",
-      link: "",
+      title: "Corte Fino",
+      desc: "Landing Page estática para Barbearia, desenvolvida apenas com foco em design responsivo e experiência do usuário",
+      color: "neonYellow",
       soon: true,
       category: "Landing Page",
       image: "",
       techs: ["React", "TailwindCSS"],
       code: "",
     },
+    {
+      title: "Catálogo para Piscicultura",
+      desc: "Catálogo desenvolvido para a Piscicultura, com foco em apresentar as espécies vendidas e marketing digital",
+      color: "neonGreen",
+      link: "",
+      soon: true,
+      category: "Site Completo",
+      image: "",
+      techs: ["React", "TailwindCSS", "Supabase"],
+      code: "",
+    },
+    {
+      title: "Logomarca para Barbearia Corte Fino",
+      desc: "Logo personalizada para a Barbearia, criada no Canva com foco em identidade visual",
+      color: "neonYellow",
+      soon: true,
+      category: "Logomarca",
+      image: "",
+      techs: ["Canva"],
+    },
   ],
+
   recentes: [
     {
-      title: "Portfólio Dev",
-      desc: "Site pessoal interativo para apresentar meus projetos e evolução como desenvolvedor, com design futurista e animações dinâmicas",
-      color: "neonPurple",
-      link: "https://portfoliorayckacastro.netlify.app/",
-      category: "Site Completo",
-      image: "/home_port.png",
+      title: "PetClini",
+      desc: "Landing Page estática para pet shop, desenvolvida apenas com foco em design responsivo e experiência do usuário",
+      color: "neonGreen",
+      soon: false,
+      category: "Landing Page",
+      image: "home_pet.png",
       techs: ["React", "TailwindCSS"],
+      code: "https://github.com/Rayck4dev/Landing-Pages/tree/PetClini",
     },
     {
       title: "Delícias no Pote 2.0",
@@ -33,17 +54,17 @@ export const projectsData = {
       code: "https://github.com/Rayck4dev/Cardapio-Digital_2.0",
     },
   ],
+
   landing: [
     {
-      title: "Pet Clini",
+      title: "PetClini",
       desc: "Landing Page estática para pet shop, desenvolvida apenas com foco em design responsivo e experiência do usuário",
       color: "neonGreen",
-      link: "",
-      soon: true,
+      soon: false,
       category: "Landing Page",
-      image: "",
+      image: "home_pet.png",
       techs: ["React", "TailwindCSS"],
-      code: "",
+      code: "https://github.com/Rayck4dev/Landing-Pages/tree/PetClini",
     },
     {
       title: "Blog Elite Vougue",
@@ -56,6 +77,28 @@ export const projectsData = {
       code: "https://github.com/Rayck4dev/blog-EliteVougue",
     },
   ],
+
+  logomarcas: [
+    {
+      title: "Logomarca para Barbearia Corte Fino",
+      desc: "Logo personalizada para a Barbearia Corte Fino, criada no Canva com foco em identidade visual",
+      color: "neonBlue",
+      soon: true,
+      category: "Logomarca",
+      images: [],
+      techs: ["Canva"],
+    },
+    {
+      title: "Logomarca para o PetShop PETCLINI",
+      desc: "Logo personalizada para o PetShop PETCLINI, criada no Canva, inspirada em um PetShop local com foco em identidade visual",
+      color: "neonGreen",
+      soon: false,
+      category: "Logomarca",
+      images: ["/logo_PETCLINI.png", "/PET_SHOP.jpg"],
+      techs: ["Canva"],
+    },
+  ],
+
   academicos: [
     {
       title: "Eventix",
@@ -66,7 +109,6 @@ export const projectsData = {
       techs: ["CSS3", "HTML5", "JavaScript", "React", "Supabase", "API REST"],
       code: "https://github.com/Rayck4dev/Projeto_Eventix",
     },
-
     {
       title: "Delícias no Pote 1.0",
       desc: "Primeira versão do catálogo digital, Delícias no Pote desenvolvida como projeto de extensão",
@@ -88,7 +130,18 @@ export const projectsData = {
       code: "https://github.com/Rayck4dev/Atividades-Java_Facul/tree/Trabalho-Ped%C3%A1gio-2025",
     },
   ],
+
   completos: [
+    {
+      title: "Pet Clini",
+      desc: "Landing Page estática para pet shop, desenvolvida apenas com foco em design responsivo e experiência do usuário",
+      color: "neonGreen",
+      soon: false,
+      category: "Landing Page",
+      image: "home_pet.png",
+      techs: ["React", "TailwindCSS"],
+      code: "https://github.com/Rayck4dev/Landing-Pages/tree/PetClini",
+    },
     {
       title: "Portfólio Dev",
       desc: "Site pessoal interativo para apresentar meus projetos e evolução como desenvolvedor, com design futurista e animações dinâmicas",

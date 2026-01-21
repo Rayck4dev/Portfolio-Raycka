@@ -45,7 +45,7 @@ export default function Projects() {
           >
             Aqui você encontra uma coleção dos meus projetos organizados por
             categoria e status. Explore cada seção para conhecer mais sobre meu
-            trabalho em diferentes áreas como e-commerce, sistemas inteligentes,
+            trabalho em diferentes áreas como sistemas inteligentes,
             landing pages e aplicações completas.
           </motion.p>
 
@@ -86,6 +86,14 @@ export default function Projects() {
           bg="bg-gradient-to-r from-neonGreen/20 to-neonCyan/20"
         />
         <Section
+          id="logomarcas"
+          title="Logomarcas"
+          icon="📸"
+          intro="Logomarcas personalizadas criadas no Canva com foco em identidade visual"
+          items={projectsData.logomarcas}
+          bg="bg-gradient-to-r from-neonBlue/20 to-neonPink/20"
+        />
+        <Section
           id="academicos"
           title="Trabalhos Acadêmicos"
           icon="🎓"
@@ -93,7 +101,6 @@ export default function Projects() {
           items={projectsData.academicos}
           bg="bg-gradient-to-r from-neonOrange/20 to-neonMagenta/20"
         />
-
         <Section
           id="completos"
           title="Projetos Concluídos"

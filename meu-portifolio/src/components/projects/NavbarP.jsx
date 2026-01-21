@@ -14,6 +14,7 @@ export default function NavbarProjects() {
       "desenvolvimento",
       "ecommerce",
       "landing",
+      "logomarcas",
       "academicos",
       "completos",
     ];
@@ -77,6 +78,12 @@ export default function NavbarProjects() {
             active={active === "landing"}
             color="neonGold"
           />
+            <NavItem
+              href="#logomarcas"
+              label="Logos"
+              active={active === "logomarcas"}
+              color="neonBlue"
+            />
           <NavItem
             href="#academicos"
             label="Academic"
