@@ -1,4 +1,4 @@
-import fotoRaycka from "../../assets/Foto-Port_org.jpg";
+import fotoRaycka from "../../assets/fotominha.jpg";
 
 export default function AboutMe() {
   return (
@@ -17,7 +17,6 @@ export default function AboutMe() {
       </h2>
 
       <div className="relative z-10 flex flex-col md:flex-row items-center gap-8 sm:gap-12 lg:gap-16 max-w-6xl w-full animate-fadeUp">
-        {/* Alteração 3: imagem responsiva */}
         <div
           className="
             w-48 h-48 sm:w-64 sm:h-64 lg:w-80 lg:h-80 

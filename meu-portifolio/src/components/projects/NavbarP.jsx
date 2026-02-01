@@ -16,7 +16,7 @@ export default function NavbarProjects() {
       "landing",
       "logomarcas",
       "academicos",
-      "completos",
+      "outros",
     ];
 
     const handleScroll = () => {
@@ -91,10 +91,10 @@ export default function NavbarProjects() {
             color="neonOrange"
           />
           <NavItem
-            href="#completos"
-            label="Complete Projects"
-            active={active === "completos"}
-            color="neonPink"
+            href="#outros"
+            label="Other Projects"
+            active={active === "outros"}
+            color="neonRed"
           />
 
           <li>
@@ -176,10 +176,10 @@ export default function NavbarProjects() {
             onClick={() => setIsOpen(false)}
           />
           <NavItem
-            href="#completos"
-            label="Complete Projects"
-            active={active === "completos"}
-            color="neonPink"
+            href="#outros"
+            label="Other Projects"
+            active={active === "outros"}
+            color="neonRed"
             onClick={() => setIsOpen(false)}
           />
 

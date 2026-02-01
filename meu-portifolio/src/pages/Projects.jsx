@@ -102,12 +102,12 @@ export default function Projects() {
           bg="bg-gradient-to-r from-neonOrange/20 to-neonMagenta/20"
         />
         <Section
-          id="completos"
-          title="Projetos Concluídos"
+          id="outros"
+          title="Outros Projetos"
           icon="💻"
-          intro="Sites e sistemas finalizados, com design personalizado e funcionalidades robustas prontos para uso"
-          items={projectsData.completos}
-          bg="bg-gradient-to-r from-neonPurple/20 to-neonTeal/20"
+          intro="Projetos desenvolvidos durantes minha participação em Bootcamps, Imersões e Hacktowns"
+          items={projectsData.outros}
+          bg="bg-gradient-to-r from-neonPink/20 to-neonBlue/20"
         />
       </main>
       <Footer />

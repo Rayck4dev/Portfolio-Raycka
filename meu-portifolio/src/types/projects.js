@@ -1,6 +1,6 @@
 import IconDelicias from "@/assets/faviconDelicias.png.png";
-import IconPortfolio from "@/assets/favicon_RC.ico";
 import IconPetClini from "@/assets/petclinifavic.png";
+import IconDash from "@/assets/cinemaplay.png";
 
 export const projects = [
   {
@@ -11,11 +11,11 @@ export const projects = [
     icon: IconDelicias,
   },
   {
-    title: "Portfólio Dev",
-    desc: "Site pessoal interativo para apresentar meus projetos e evolução como desenvolvedor, com design futurista e animações dinâmicas",
-    link: "https://portfoliorayckacastro.netlify.app",
-    color: "neonPurple",
-    icon: IconPortfolio,
+    title: "Dashboard de Filmes",
+    desc: "Dashboard criado para aprendizado durante a Imersão Alura, com dados reais da API TMDb.",
+    link: "https://dashboard-filmes.streamlit.app",
+    color: "neonRed",
+    icon: IconDash,
   },
   {
     title: "Pet Clini",
@@ -29,13 +29,5 @@ export const projects = [
     desc: "Landing Page estática para Barbearia, desenvolvida apenas com foco em design responsivo e experiência do usuário",
     color: "neonYellow",
     soon: true,
-
-  },
-  {
-    title: "Piscicultura Magrão Alevinos",
-    desc: "Catálogo desenvolvido para a Piscicultura, com foco em apresentar as espécies vendidas e marketing digital",
-    color: "neonBlue",
-    soon: true,
-    
   },
 ];

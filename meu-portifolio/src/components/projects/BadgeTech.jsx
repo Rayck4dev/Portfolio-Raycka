@@ -1,5 +1,5 @@
-import { FaReact, FaJava, FaHtml5, FaCss3Alt } from "react-icons/fa";
-import { SiTailwindcss, SiSupabase, SiJavascript, SiCanva, SiPhp, SiMysql } from "react-icons/si";
+import { FaReact, FaJava, FaHtml5, FaCss3Alt, FaPython} from "react-icons/fa";
+import { SiTailwindcss, SiSupabase, SiJavascript, SiCanva, SiPhp, SiMysql, SiPandas, SiPlotly, SiStreamlit} from "react-icons/si";
 import { TbApi} from "react-icons/tb";
 
 
@@ -8,6 +8,7 @@ export default function BadgeTech({ tech }) {
     React: <FaReact />,
     HTML5: <FaHtml5 />,
     CSS3: <FaCss3Alt />,
+    Python : <FaPython />,
     TailwindCSS: <SiTailwindcss />,
     Canva : <SiCanva />,
     JavaScript: <SiJavascript />,
@@ -15,6 +16,9 @@ export default function BadgeTech({ tech }) {
     MySql : <SiMysql />,
     Java: <FaJava />,
     Php : <SiPhp />,
+    Pandas : <SiPandas />,
+    Plotly : <SiPlotly />,
+    Streamlit : <SiStreamlit />,
     "API REST": <TbApi />,
   };
 
@@ -22,6 +26,7 @@ export default function BadgeTech({ tech }) {
     React: "text-neonCyan border-neonCyan",
     HTML5: "text-neonRed border-neonRed",
     CSS3: "text-neonBlue border-neonBlue",
+    Python: "text-neonYellow border-neonBlue",
     TailwindCSS: "text-neonBlue border-neonBlue",
     Canva: "text-neonPurple border-neonPurple",
     JavaScript: "text-neonYellow border-neonYellow",
@@ -29,7 +34,11 @@ export default function BadgeTech({ tech }) {
     MySql: "text-neonLime border-neonGreen",
     Java: "text-neonRed border-neonRed",
     Php : "text-neonMagenta border-neonMagenta",
+    Streamlit : "text-neonRed border-neonRed",
+    Plotly : "text-neonGreen border-neonGreen",
+    Pandas : "text-neonGreen border-neonGreen",
     "API REST": "text-neonOrange border-neonOrange",
+
     Default: "text-white border-white",
   };
 

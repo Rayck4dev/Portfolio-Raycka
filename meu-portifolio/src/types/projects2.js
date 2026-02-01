@@ -1,3 +1,5 @@
+import { SiPlotly } from "react-icons/si";
+
 export const projectsData = {
   desenvolvimento: [
     {
@@ -130,17 +132,18 @@ export const projectsData = {
       code: "https://github.com/Rayck4dev/Atividades-Java_Facul/tree/Trabalho-Ped%C3%A1gio-2025",
     },
   ],
-
-  completos: [
+  
+  outros: [
     {
-      title: "Pet Clini",
-      desc: "Landing Page estática para pet shop, desenvolvida apenas com foco em design responsivo e experiência do usuário",
-      color: "neonGreen",
+      title: "Dashboard de Filmes",
+      desc: "Dashboard criado para aprendizado durante a Imersão Alura, com dados reais da API TMDb",
+      color: "neonRed",
+      link: "https://dashboard-filmes.streamlit.app/",
       soon: false,
-      category: "Landing Page",
-      image: "home_pet.png",
-      techs: ["React", "TailwindCSS"],
-      code: "https://github.com/Rayck4dev/Landing-Pages/tree/PetClini",
+      category: "Outros",
+      image: "home_dash.png",
+      techs: ["Python", "API REST", "Pandas", "Plotly", "Streamlit"],
+      code: "https://github.com/Rayck4dev/Dashboard_filmes",
     },
     {
       title: "Portfólio Dev",
@@ -150,16 +153,6 @@ export const projectsData = {
       category: "Site Completo",
       image: "/home_port.png",
       techs: ["React", "TailwindCSS"],
-    },
-    {
-      title: "Delícias no Pote 2.0",
-      desc: "Sistema de catálogo digital com painel administrativo e CRUD completo, permitindo gestão de produtos em tempo real",
-      color: "neonPink",
-      link: "https://deliciasnopoterm.netlify.app",
-      category: "Site Completo",
-      image: "/home_del.png",
-      techs: ["React", "Supabase", "TailwindCSS"],
-      code: "https://github.com/Rayck4dev/Cardapio-Digital_2.0",
     },
   ],
 };

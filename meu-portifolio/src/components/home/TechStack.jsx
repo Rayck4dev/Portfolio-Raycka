@@ -9,6 +9,7 @@ import {
   FaPhp,
   FaJava,
   FaWordpress,
+  FaPython,
 } from "react-icons/fa";
 
 import {
@@ -68,6 +69,7 @@ export default function TechStack() {
             { name: "Java", icon: <FaJava /> },
             { name: "JavaScript", icon: <SiJavascript /> },
             { name: "API REST", icon: <TbApi /> },
+            { name: "Python", icon: <FaPython /> },
           ]}
         />
 
