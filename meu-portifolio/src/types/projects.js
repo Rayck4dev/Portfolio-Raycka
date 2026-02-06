@@ -1,6 +1,7 @@
 import IconDelicias from "@/assets/faviconDelicias.png.png";
 import IconPetClini from "@/assets/petclinifavic.png";
 import IconDash from "@/assets/cinemaplay.png";
+import IconFish from "@/assets/faviconfish.ico";
 
 export const projects = [
   {
@@ -12,10 +13,17 @@ export const projects = [
   },
   {
     title: "Dashboard de Filmes",
-    desc: "Dashboard criado para aprendizado durante a Imersão Alura, com dados reais da API TMDb.",
+    desc: "Dashboard criado para aprendizado durante a Imersão Alura, com dados reais da API TMDb",
     link: "https://dashboard-filmes.streamlit.app",
     color: "neonRed",
     icon: IconDash,
+  },
+  {
+    title: "LinkTree para Piscicultura",
+    desc: "Aplicação web moderna para apresentar catálogo de peixes, contatos e informações da piscicultura de forma simples e intuitiva",
+    link: "https://pisciculturamagraoalevinos.netlify.app/",
+    color: "neonGreen",
+    icon: IconFish,
   },
   {
     title: "Pet Clini",

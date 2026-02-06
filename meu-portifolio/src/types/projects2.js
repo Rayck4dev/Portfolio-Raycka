@@ -1,5 +1,3 @@
-import { SiPlotly } from "react-icons/si";
-
 export const projectsData = {
   desenvolvimento: [
     {
@@ -10,17 +8,6 @@ export const projectsData = {
       category: "Landing Page",
       image: "",
       techs: ["React", "TailwindCSS"],
-      code: "",
-    },
-    {
-      title: "Catálogo para Piscicultura",
-      desc: "Catálogo desenvolvido para a Piscicultura, com foco em apresentar as espécies vendidas e marketing digital",
-      color: "neonGreen",
-      link: "",
-      soon: true,
-      category: "Site Completo",
-      image: "",
-      techs: ["React", "TailwindCSS", "Supabase"],
       code: "",
     },
     {
@@ -36,6 +23,28 @@ export const projectsData = {
 
   recentes: [
     {
+      title: "LinkTree para Piscicultura",
+      desc: "Aplicação web moderna para apresentar catálogo de peixes, contatos e informações da piscicultura de forma simples e intuitiva",
+      color: "neonGreen",
+      link: "https://pisciculturamagraoalevinos.netlify.app/",
+      soon: false,
+      category: "Site Completo",
+      image: "home_fish.png",
+      techs: ["React", "TailwindCSS", "JavaScript"],
+      code: "https://github.com/Rayck4dev/piscicultura-linktree",
+    },
+    {
+      title: "Dashboard de Filmes",
+      desc: "Dashboard criado para aprendizado durante a Imersão Alura, com dados reais da API TMDb",
+      color: "neonRed",
+      link: "https://dashboard-filmes.streamlit.app/",
+      soon: false,
+      category: "Outros",
+      image: "home_dash.png",
+      techs: ["Python", "API REST", "Pandas", "Plotly", "Streamlit"],
+      code: "https://github.com/Rayck4dev/Dashboard_filmes",
+    },
+    {
       title: "PetClini",
       desc: "Landing Page estática para pet shop, desenvolvida apenas com foco em design responsivo e experiência do usuário",
       color: "neonGreen",
@@ -44,16 +53,6 @@ export const projectsData = {
       image: "home_pet.png",
       techs: ["React", "TailwindCSS"],
       code: "https://github.com/Rayck4dev/Landing-Pages/tree/PetClini",
-    },
-    {
-      title: "Delícias no Pote 2.0",
-      desc: "Sistema de catálogo digital com painel administrativo e CRUD completo, permitindo gestão de produtos em tempo real",
-      color: "neonPink",
-      link: "https://deliciasnopoterm.netlify.app",
-      category: "Site Completo",
-      image: "/home_del.png",
-      techs: ["React", "Supabase", "TailwindCSS"],
-      code: "https://github.com/Rayck4dev/Cardapio-Digital_2.0",
     },
   ],
 
@@ -82,21 +81,30 @@ export const projectsData = {
 
   logomarcas: [
     {
-      title: "Logomarca para Barbearia Corte Fino",
-      desc: "Logo personalizada para a Barbearia Corte Fino, criada no Canva com foco em identidade visual",
-      color: "neonBlue",
-      soon: true,
-      category: "Logomarca",
-      images: [],
-      techs: ["Canva"],
-    },
-    {
       title: "Logomarca para o PetShop PETCLINI",
       desc: "Logo personalizada para o PetShop PETCLINI, criada no Canva, inspirada em um PetShop local com foco em identidade visual",
       color: "neonGreen",
       soon: false,
       category: "Logomarca",
       images: ["/logo_PETCLINI.png", "/PET_SHOP.jpg"],
+      techs: ["Canva"],
+    },
+    {
+      title: "Logomarca para a Piscicultura Magrão Alevinos",
+      desc: "Logo personalizada para a Piscicultura Magrão Alevinos de Rolim de Moura - Rondônia, criada no Canva, repaginada com foco em identidade visual",
+      color: "neonBlue",
+      soon: false,
+      category: "Logomarca",
+      images: ["/logo_piscicultura.png"],
+      techs: ["Canva"],
+    },
+    {
+      title: "Logomarca para Barbearia Corte Fino",
+      desc: "Logo personalizada para a Barbearia Corte Fino, criada no Canva com foco em identidade visual",
+      color: "neonBlue",
+      soon: true,
+      category: "Logomarca",
+      images: [],
       techs: ["Canva"],
     },
   ],
@@ -132,8 +140,19 @@ export const projectsData = {
       code: "https://github.com/Rayck4dev/Atividades-Java_Facul/tree/Trabalho-Ped%C3%A1gio-2025",
     },
   ],
-  
+
   outros: [
+    {
+      title: "LinkTree para Piscicultura",
+      desc: "Aplicação web moderna para apresentar catálogo de peixes, contatos e informações da piscicultura de forma simples e intuitiva",
+      color: "neonGreen",
+      link: "https://pisciculturamagraoalevinos.netlify.app/",
+      soon: false,
+      category: "Site Completo",
+      image: "home_fish.png",
+      techs: ["React", "TailwindCSS", "JavaScript"],
+      code: "https://github.com/Rayck4dev/piscicultura-linktree",
+    },
     {
       title: "Dashboard de Filmes",
       desc: "Dashboard criado para aprendizado durante a Imersão Alura, com dados reais da API TMDb",
