@@ -1,6 +1,23 @@
 export const projectsData = {
   desenvolvimento: [
     {
+      title: "App Mobile",
+      desc: "Detalhes em breve...",
+      color: "neonPink",
+      soon: true,
+      category: "Trabalho Acadêmico",
+      image: "",
+      techs: [
+        "Mobile",
+        "TypeScript",
+        "React Native",
+        "TailwindCSS",
+        "Php",
+        "Codeigniter",
+      ],
+      code: "",
+    },
+    {
       title: "Corte Fino",
       desc: "Landing Page estática para Barbearia, desenvolvida apenas com foco em design responsivo e experiência do usuário",
       color: "neonYellow",
@@ -9,15 +26,6 @@ export const projectsData = {
       image: "",
       techs: ["React", "TailwindCSS"],
       code: "",
-    },
-    {
-      title: "Logomarca para Barbearia Corte Fino",
-      desc: "Logo personalizada para a Barbearia, criada no Canva com foco em identidade visual",
-      color: "neonYellow",
-      soon: true,
-      category: "Logomarca",
-      image: "",
-      techs: ["Canva"],
     },
   ],
 
@@ -44,16 +52,6 @@ export const projectsData = {
       techs: ["Python", "API REST", "Pandas", "Plotly", "Streamlit"],
       code: "https://github.com/Rayck4dev/Dashboard_filmes",
     },
-    {
-      title: "PetClini",
-      desc: "Landing Page estática para pet shop, desenvolvida apenas com foco em design responsivo e experiência do usuário",
-      color: "neonGreen",
-      soon: false,
-      category: "Landing Page",
-      image: "home_pet.png",
-      techs: ["React", "TailwindCSS"],
-      code: "https://github.com/Rayck4dev/Landing-Pages/tree/PetClini",
-    },
   ],
 
   landing: [
@@ -79,36 +77,6 @@ export const projectsData = {
     },
   ],
 
-  logomarcas: [
-    {
-      title: "Logomarca para o PetShop PETCLINI",
-      desc: "Logo personalizada para o PetShop PETCLINI, criada no Canva, inspirada em um PetShop local com foco em identidade visual",
-      color: "neonGreen",
-      soon: false,
-      category: "Logomarca",
-      images: ["/logo_PETCLINI.png", "/PET_SHOP.jpg"],
-      techs: ["Canva"],
-    },
-    {
-      title: "Logomarca para a Piscicultura Magrão Alevinos",
-      desc: "Logo personalizada para a Piscicultura Magrão Alevinos de Rolim de Moura - Rondônia, criada no Canva, repaginada com foco em identidade visual",
-      color: "neonBlue",
-      soon: false,
-      category: "Logomarca",
-      images: ["/logo_piscicultura.png"],
-      techs: ["Canva"],
-    },
-    {
-      title: "Logomarca para Barbearia Corte Fino",
-      desc: "Logo personalizada para a Barbearia Corte Fino, criada no Canva com foco em identidade visual",
-      color: "neonBlue",
-      soon: true,
-      category: "Logomarca",
-      images: [],
-      techs: ["Canva"],
-    },
-  ],
-
   academicos: [
     {
       title: "Eventix",
@@ -127,7 +95,7 @@ export const projectsData = {
       soon: false,
       category: "Landing Page",
       image: "/home_del1.png",
-      techs: ["HTML5", "CSS3", "JavaScript", "Canva"],
+      techs: ["HTML5", "CSS3", "JavaScript"],
       code: "https://github.com/Rayck4dev/Projeto_Cardapio-Digital",
     },
     {

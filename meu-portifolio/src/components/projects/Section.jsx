@@ -29,7 +29,7 @@ export default function Section({ id, title, intro, items, bg, icon }) {
       viewport={{ once: true }}
     >
       <motion.h2
-        className="flex items-center gap-2 text-4xl font-audiowide text-neonCyan mb-4 drop-shadow-[0_0_20px_var(--tw-shadow-color)]"
+        className="flex items-center gap-2 text-3xl font-audiowide text-neonCyan mb-4 drop-shadow-[0_0_20px_var(--tw-shadow-color)]"
         style={{ "--tw-shadow-color": "var(--neonCyan)" }}
         variants={itemVariants}
       >

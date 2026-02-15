@@ -1,23 +1,8 @@
 import PixelButton from "@/components/ui/PixelButton";
 import BadgeTech from "./BadgeTech";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/navigation";
-import { Navigation } from "swiper/modules";
 
 export default function ProjectCard({ project }) {
-  const {
-    title,
-    desc,
-    color,
-    soon,
-    link,
-    code,
-    image,
-    images,
-    techs,
-    category,
-  } = project;
+  const { title, desc, color, soon, link, code, image, techs } = project;
 
   return (
     <div
@@ -27,38 +12,17 @@ export default function ProjectCard({ project }) {
         borderColor: `var(--${color} || var(--neonCyan))`,
       }}
     >
-      {category === "Logomarca" && images && images.length > 0 ? (
-        <Swiper
-          modules={[Navigation]}
-          navigation
-          spaceBetween={10}
-          slidesPerView={1}
-          className="mb-4 rounded-md border border-neonCyan shadow-[0_0_15px_var(--tw-shadow-color)]"
+      {image && (
+        <div
+          className="w-full max-w-full max-h-[520px] overflow-hidden rounded-md mb-4 border border-neonCyan shadow-[0_0_15px_var(--tw-shadow-color)]"
           style={{ "--tw-shadow-color": "var(--neonCyan)" }}
         >
-          {images.map((img, idx) => (
-            <SwiperSlide key={idx}>
-              <img
-                src={img}
-                alt={`${title} - ${idx + 1}`}
-                className="w-full h-[380px] object-contain"
-              />
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      ) : (
-        image && (
-          <div
-            className="w-full max-h-[520px] overflow-hidden rounded-md mb-4 border border-neonCyan shadow-[0_0_15px_var(--tw-shadow-color)]"
-            style={{ "--tw-shadow-color": "var(--neonCyan)" }}
-          >
-            <img
-              src={image}
-              alt={title}
-              className="w-full h-full object-contain"
-            />
-          </div>
-        )
+          <img
+            src={image}
+            alt={title}
+            className="w-full h-auto object-contain"
+          />
+        </div>
       )}
 
       <h3 className="text-xl font-audiowide mb-2 text-neonCyan">{title}</h3>

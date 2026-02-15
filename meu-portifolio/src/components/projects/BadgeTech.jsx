@@ -1,25 +1,47 @@
-import { FaReact, FaJava, FaHtml5, FaCss3Alt, FaPython} from "react-icons/fa";
-import { SiTailwindcss, SiSupabase, SiJavascript, SiCanva, SiPhp, SiMysql, SiPandas, SiPlotly, SiStreamlit} from "react-icons/si";
-import { TbApi} from "react-icons/tb";
+import {
+  FaReact,
+  FaJava,
+  FaHtml5,
+  FaCss3Alt,
+  FaPython,
+  FaMobileAlt,
+} from "react-icons/fa";
 
+import {
+  SiTailwindcss,
+  SiSupabase,
+  SiJavascript,
+  SiPhp,
+  SiMysql,
+  SiPandas,
+  SiPlotly,
+  SiStreamlit,
+  SiTypescript,
+  SiCodeigniter,
+} from "react-icons/si";
+
+import { TbApi, TbBrandReactNative } from "react-icons/tb";
 
 export default function BadgeTech({ tech }) {
   const iconMap = {
     React: <FaReact />,
+    "React Native": <TbBrandReactNative />,
     HTML5: <FaHtml5 />,
     CSS3: <FaCss3Alt />,
-    Python : <FaPython />,
+    Python: <FaPython />,
     TailwindCSS: <SiTailwindcss />,
-    Canva : <SiCanva />,
     JavaScript: <SiJavascript />,
+    TypeScript: <SiTypescript />,
     Supabase: <SiSupabase />,
-    MySql : <SiMysql />,
+    MySql: <SiMysql />,
     Java: <FaJava />,
-    Php : <SiPhp />,
-    Pandas : <SiPandas />,
-    Plotly : <SiPlotly />,
-    Streamlit : <SiStreamlit />,
+    Php: <SiPhp />,
+    Pandas: <SiPandas />,
+    Plotly: <SiPlotly />,
+    Streamlit: <SiStreamlit />,
     "API REST": <TbApi />,
+    Codeigniter: <SiCodeigniter />,
+    Mobile: <FaMobileAlt />,
   };
 
   const colorMap = {
@@ -27,17 +49,20 @@ export default function BadgeTech({ tech }) {
     HTML5: "text-neonRed border-neonRed",
     CSS3: "text-neonBlue border-neonBlue",
     Python: "text-neonYellow border-neonBlue",
-    TailwindCSS: "text-neonBlue border-neonBlue",
-    Canva: "text-neonPurple border-neonPurple",
+    TailwindCSS: "text-neonTeal border-neonTeal",
     JavaScript: "text-neonYellow border-neonYellow",
+    TypeScript: "text-neonBlue border-neonBlue",
     Supabase: "text-neonGreen border-neonGreen",
     MySql: "text-neonLime border-neonGreen",
     Java: "text-neonRed border-neonRed",
-    Php : "text-neonMagenta border-neonMagenta",
-    Streamlit : "text-neonRed border-neonRed",
-    Plotly : "text-neonGreen border-neonGreen",
-    Pandas : "text-neonGreen border-neonGreen",
+    Php: "text-neonMagenta border-neonMagenta",
+    Streamlit: "text-neonRed border-neonRed",
+    Plotly: "text-neonGreen border-neonGreen",
+    Pandas: "text-neonGreen border-neonGreen",
+    Codeigniter: "text-neonRed border-neonRed",
     "API REST": "text-neonOrange border-neonOrange",
+    "React Native": "text-neonBlue border-neonBlue",
+    Mobile: "text-neonGold border-neonGold",
 
     Default: "text-white border-white",
   };

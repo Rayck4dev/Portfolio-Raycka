@@ -20,6 +20,7 @@ import {
   SiVite,
   SiMysql,
   SiSupabase,
+  SiTypescript,
 } from "react-icons/si";
 
 export default function TechStack() {
@@ -55,6 +56,7 @@ export default function TechStack() {
             { name: "CSS", icon: <FaCss3Alt /> },
             { name: "TailwindCSS", icon: <SiTailwindcss /> },
             { name: "React", icon: <FaReact /> },
+            { name: "TypeScript", icon: <SiTypescript /> },
             { name: "WordPress", icon: <FaWordpress /> },
           ]}
         />
