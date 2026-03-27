@@ -1,4 +1,4 @@
-import { TbApi } from "react-icons/tb";
+import { TbApi, TbBrandNextjs } from "react-icons/tb";
 
 import {
   FaHtml5,
@@ -56,6 +56,7 @@ export default function TechStack() {
             { name: "CSS", icon: <FaCss3Alt /> },
             { name: "TailwindCSS", icon: <SiTailwindcss /> },
             { name: "React", icon: <FaReact /> },
+            { name: "Nextjs", icon: <TbBrandNextjs /> },
             { name: "TypeScript", icon: <SiTypescript /> },
             { name: "WordPress", icon: <FaWordpress /> },
           ]}
@@ -110,7 +111,6 @@ function Category({ title, color, items }) {
         {title}
       </h3>
 
-      {/* Alteração 1: grid adaptável */}
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 sm:gap-8">
         {items.map((tech) => (
           <TechCard

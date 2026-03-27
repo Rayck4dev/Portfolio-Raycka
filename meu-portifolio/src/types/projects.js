@@ -1,7 +1,6 @@
 import IconDelicias from "@/assets/faviconDelicias.png.png";
-import IconPetClini from "@/assets/petclinifavic.png";
-import IconDash from "@/assets/cinemaplay.png";
 import IconFish from "@/assets/faviconfish.ico";
+import IconShopSmart from "@/assets/faviconshop.ico";
 
 export const projects = [
   {
@@ -12,13 +11,6 @@ export const projects = [
     icon: IconDelicias,
   },
   {
-    title: "Dashboard de Filmes",
-    desc: "Dashboard criado para aprendizado durante a Imersão Alura, com dados reais da API TMDb",
-    link: "https://dashboard-filmes.streamlit.app",
-    color: "neonRed",
-    icon: IconDash,
-  },
-  {
     title: "LinkTree para Piscicultura",
     desc: "Aplicação web moderna para apresentar catálogo de peixes, contatos e informações da piscicultura de forma simples e intuitiva",
     link: "https://pisciculturamagraoalevinos.netlify.app/",
@@ -26,16 +18,10 @@ export const projects = [
     icon: IconFish,
   },
   {
-    title: "Pet Clini",
-    desc: "Landing Page estática para pet shop, desenvolvida apenas com foco em design responsivo e experiência do usuário",
-    color: "neonGreen",
-    link: "https://github.com/Rayck4dev/Landing-Pages/tree/PetClini",
-    icon: IconPetClini,
-  },
-  {
-    title: "Corte Fino",
-    desc: "Landing Page estática para Barbearia, desenvolvida apenas com foco em design responsivo e experiência do usuário",
+    title: "ShopSmart App",
+    desc: "Aplicativo mobile para compra e venda de produtos, desenvolvido para a disciplina de Desenvolvimento Mobile",
     color: "neonYellow",
     soon: true,
+    icon: IconShopSmart,
   },
 ];

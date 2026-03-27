@@ -18,9 +18,10 @@ import {
   SiStreamlit,
   SiTypescript,
   SiCodeigniter,
+  SiMediapipe,
 } from "react-icons/si";
 
-import { TbApi, TbBrandReactNative } from "react-icons/tb";
+import { TbApi, TbBrandReactNative, TbBrandNextjs } from "react-icons/tb";
 
 export default function BadgeTech({ tech }) {
   const iconMap = {
@@ -42,6 +43,8 @@ export default function BadgeTech({ tech }) {
     "API REST": <TbApi />,
     Codeigniter: <SiCodeigniter />,
     Mobile: <FaMobileAlt />,
+    Nextjs: <TbBrandNextjs />,
+    Mediapipe: <SiMediapipe />,
   };
 
   const colorMap = {
@@ -63,6 +66,8 @@ export default function BadgeTech({ tech }) {
     "API REST": "text-neonOrange border-neonOrange",
     "React Native": "text-neonBlue border-neonBlue",
     Mobile: "text-neonGold border-neonGold",
+    Nextjs: "text-neonOrange border-neonOrange",
+    Mediapipe: "text-neonPink border-neonPink",
 
     Default: "text-white border-white",
   };
