@@ -1,4 +1,4 @@
-import fotoRaycka from "../../assets/fotominha.jpg";
+import fotoRaycka from "../../assets/picturemy.jpeg";
 
 export default function AboutMe() {
   return (
