@@ -10,6 +10,7 @@ import {
   FaJava,
   FaWordpress,
   FaPython,
+  FaDocker,
 } from "react-icons/fa";
 
 import {
@@ -21,7 +22,13 @@ import {
   SiMysql,
   SiSupabase,
   SiTypescript,
+  SiCodeigniter,
+  SiExpo,
+  SiVercel,
+  SiNetlify,
 } from "react-icons/si";
+
+import { DiDatabase } from "react-icons/di";
 
 export default function TechStack() {
   return (
@@ -54,11 +61,12 @@ export default function TechStack() {
           items={[
             { name: "HTML", icon: <FaHtml5 /> },
             { name: "CSS", icon: <FaCss3Alt /> },
-            { name: "TailwindCSS", icon: <SiTailwindcss /> },
-            { name: "React", icon: <FaReact /> },
-            { name: "Nextjs", icon: <TbBrandNextjs /> },
+            { name: "JavaScript", icon: <SiJavascript /> },
             { name: "TypeScript", icon: <SiTypescript /> },
-            { name: "WordPress", icon: <FaWordpress /> },
+            { name: "React", icon: <FaReact /> },
+            { name: "Next.js", icon: <TbBrandNextjs /> },
+            { name: "TailwindCSS", icon: <SiTailwindcss /> },
+            { name: "React Native / Expo", icon: <SiExpo /> },
           ]}
         />
 
@@ -69,10 +77,21 @@ export default function TechStack() {
           items={[
             { name: "Node.js", icon: <FaNodeJs /> },
             { name: "PHP", icon: <FaPhp /> },
+            { name: "CodeIgniter 4", icon: <SiCodeigniter /> },
             { name: "Java", icon: <FaJava /> },
-            { name: "JavaScript", icon: <SiJavascript /> },
-            { name: "API REST", icon: <TbApi /> },
             { name: "Python", icon: <FaPython /> },
+            { name: "API REST", icon: <TbApi /> },
+          ]}
+        />
+
+        {/* DATA ENGINEERING & INFRASTRUCTURE */}
+        <Category
+          title="Data & Infrastructure"
+          color="neonYellow"
+          items={[
+            { name: "Apache Hop", icon: <DiDatabase /> },
+            { name: "Docker", icon: <FaDocker /> },
+            { name: "Supabase", icon: <SiSupabase /> },
           ]}
         />
 
@@ -81,9 +100,18 @@ export default function TechStack() {
           title="Databases"
           color="neonGreen"
           items={[
-            { name: "PostgreSQL", icon: <SiPostgresql /> },
             { name: "MySQL", icon: <SiMysql /> },
-            { name: "Supabase", icon: <SiSupabase /> },
+            { name: "PostgreSQL", icon: <SiPostgresql /> },
+          ]}
+        />
+
+        {/* DEPLOY */}
+        <Category
+          title="Deploy"
+          color="neonCyan"
+          items={[
+            { name: "Vercel", icon: <SiVercel /> },
+            { name: "Netlify", icon: <SiNetlify /> },
           ]}
         />
 
@@ -95,6 +123,7 @@ export default function TechStack() {
             { name: "Git / GitHub", icon: <FaGitAlt /> },
             { name: "Figma", icon: <SiFigma /> },
             { name: "Vite", icon: <SiVite /> },
+            { name: "WordPress", icon: <FaWordpress /> },
           ]}
         />
       </div>
@@ -106,7 +135,7 @@ function Category({ title, color, items }) {
   return (
     <div className="animate-fadeUp">
       <h3
-        className={`text-4xl font-audiowide text-${color} mb-6 text-center drop-shadow-[0_0_10px]`}
+        className={`text-3xl sm:text-4xl font-audiowide text-${color} mb-6 text-center drop-shadow-[0_0_10px]`}
       >
         {title}
       </h3>
@@ -142,7 +171,9 @@ function TechCard({ icon, name, color }) {
       >
         {icon}
       </div>
-      <span className="text-sm sm:text-lg font-orbitron">{name}</span>
+      <span className="text-sm sm:text-base font-orbitron block break-words">
+        {name}
+      </span>
     </div>
   );
 }

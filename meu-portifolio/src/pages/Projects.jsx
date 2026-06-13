@@ -4,6 +4,7 @@ import NavbarProjects from "@/components/projects/NavbarP";
 import Section from "@/components/projects/Section";
 import { projectsData } from "@/types/projects2";
 import { motion } from "framer-motion";
+import TechMotion from "@/components/ui/TechMotion";
 
 export default function Projects() {
   useEffect(() => {
@@ -27,7 +28,7 @@ export default function Projects() {
                 backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
               }}
               transition={{ duration: 6, repeat: Infinity }}
-              className="bg-gradient-to-r from-neonPink via-neonBlue via-neonPurple to-neonGreen bg-clip-text text-transparent inline-block"
+              className="mt-14 bg-gradient-to-r from-neonPink via-neonBlue via-neonPurple to-neonGreen bg-clip-text text-transparent inline-block"
               style={{
                 backgroundSize: "200% 200%",
               }}
@@ -48,6 +49,10 @@ export default function Projects() {
             trabalho em diferentes áreas como sistemas inteligentes, landing
             pages e aplicações completas.
           </motion.p>
+
+          <div className="mt-36 w-full overflow-hidden relative">
+            <TechMotion />
+          </div>
 
           <motion.div
             className="absolute top-0 left-0 w-40 h-40 bg-neonPink/20 blur-3xl rounded-full -z-10"

@@ -5,10 +5,12 @@ import {
   FaCss3Alt,
   FaPython,
   FaMobileAlt,
+  FaDocker,
 } from "react-icons/fa";
 
 import {
   SiTailwindcss,
+  SiPostgresql,
   SiSupabase,
   SiJavascript,
   SiPhp,
@@ -22,6 +24,7 @@ import {
 } from "react-icons/si";
 
 import { TbApi, TbBrandReactNative, TbBrandNextjs } from "react-icons/tb";
+import { DiDatabase } from "react-icons/di";
 
 export default function BadgeTech({ tech }) {
   const iconMap = {
@@ -34,6 +37,9 @@ export default function BadgeTech({ tech }) {
     JavaScript: <SiJavascript />,
     TypeScript: <SiTypescript />,
     Supabase: <SiSupabase />,
+    "Apache Hop": <DiDatabase />,
+    Docker: <FaDocker />,
+    PostgreSQL: <SiPostgresql />,
     MySql: <SiMysql />,
     Java: <FaJava />,
     Php: <SiPhp />,
@@ -56,6 +62,9 @@ export default function BadgeTech({ tech }) {
     JavaScript: "text-neonYellow border-neonYellow",
     TypeScript: "text-neonBlue border-neonBlue",
     Supabase: "text-neonGreen border-neonGreen",
+    "Apache Hop": "text-neonYellow border-neonYellow",
+    Docker: "text-neonBlue border-neonBlue",
+    PostgreSQL: "text-neonGreen border-neonGreen",
     MySql: "text-neonLime border-neonGreen",
     Java: "text-neonRed border-neonRed",
     Php: "text-neonMagenta border-neonMagenta",

@@ -23,8 +23,8 @@ export default function Home() {
       <TechStack />
       <SoftSkills />
       <HardSkills />
-      <AboutMe />
       <Contact/>
+      <AboutMe />
       <Footer />
     </main>
   );

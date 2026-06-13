@@ -1,7 +1,11 @@
-import HeadIcon from "@/assets/headlog_dev.png";
-import { Link } from "react-router-dom";
+"use client"; // Se você estiver usando alguma estrutura híbrida, senão pode manter
+
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import HeadIcon from "@/assets/headlog_dev.png";
 import BinaryBackground from "@/components/ui/BinaryBackground";
+import FadeIn from "@/components/ui/FadeIn";
+import TypingText from "@/components/ui/TypingText";
 
 export default function HeroSection() {
   const [showHead, setShowHead] = useState(false);
@@ -12,50 +16,77 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section className="relative bg-[#010102] text-white min-h-screen pt-20 flex flex-col md:flex-row px-6 sm:px-12 lg:px-20 overflow-hidden">
+    <section className="relative bg-[#010102] text-white min-h-screen pt-28 pb-16 flex items-center px-6 sm:px-12 lg:px-20 overflow-hidden">
       <BinaryBackground />
 
-      {/* ESQUERDA */}
-      <div className="max-w-lg z-20 flex flex-col items-center text-center md:items-start md:text-left justify-center flex-1">
-        <h1 className="text-base sm:text-lg lg:text-xl font-bold text-white font-orbitron tracking-wide">
-          HI, I'M RAYCKA
-        </h1>
+      <div className="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center relative z-10">
+        
+        <FadeIn>
+          <div className="flex flex-col items-center md:items-start text-center md:text-left">
+            
+            <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 mb-6 w-fit">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+              </span>
+              <span className="text-[10px] font-orbitron font-bold text-emerald-500 tracking-[0.2em] uppercase">
+                Disponível para novos projetos
+              </span>
+            </div>
 
-        <h2 className="text-3xl sm:text-5xl lg:text-6xl mt-4 text-white font-bold font-audiowide leading-tight">
-          I'M A <br />
-          FULLSTACK DEVELOPER
-        </h2>
+            <h2 className="font-orbitron text-slate-500 text-xs md:text-sm tracking-[0.5em] mb-4 uppercase">
+              Especialista em Interfaces & Sistemas
+            </h2>
 
-        <p className="mt-6 mb-8 max-w-xl text-white text-sm sm:text-base lg:text-lg font-bricolage font-semibold leading-relaxed px-2 md:px-0">
-          Atualmente mergulhada no universo full‑stack, aprendendo novas
-          tecnologias e criando projetos que refletem minha evolução como dev.
-          Aqui você encontra um pouco do meu processo, minhas habilidades e tudo
-          o que venho construindo nessa caminhada.
-        </p>
+            <h1 className="font-bricolage text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-[1.15] mb-6 tracking-tight">
+              Sua marca merece um <br />
+              <div className="h-[1.2em] w-full flex justify-center md:justify-start items-center text-neonCyan drop-shadow-[0_0_15px_rgba(64,224,208,0.2)]">
+                <TypingText
+                  texts={["Site Moderno", "Design Responsivo", "Sistema de Elite"]}
+                />
+              </div>
+            </h1>
 
-        <Link
-          to="/projects"
-          className="mt-4 inline-block border-2 border-neonPurple text-neonPurple px-6 py-3 rounded hover:bg-neonPurple hover:text-white hover:scale-110 hover:shadow-[0_0_15px_#A855F7] transition-all duration-300 ease-out font-audiowide text-sm md:text-base"
-        >
-          VIEW MY PROJECTS
-        </Link>
-      </div>
+            <p className="max-w-lg text-slate-400 font-light text-base md:text-lg leading-relaxed mb-8">
+              Desenvolvimento de Sistemas Fullstack, Aplicações mobile e Websites com a engenharia e identidade de elite da{" "}
+              <strong className="text-neonPurple font-bold">DevLab</strong>.
+            </p>
 
-      {/* DIREITA - só aparece em md+ */}
-      <div className="hidden md:flex relative w-64 h-64 lg:w-[400px] lg:h-[680px] z-10 items-center justify-center flex-1">
-        <div
-          className={`transition-all duration-700 ease-out ${
-            showHead
-              ? "translate-x-0 opacity-100 blur-0"
-              : "translate-x-8 opacity-0 blur-md"
-          } md:absolute md:right-6`}
-        >
-          <img
-            src={HeadIcon}
-            alt="Cabeça Tech"
-            className="w-full h-full object-contain drop-shadow-[0_0_20px_#A855F7] animate-float"
-          />
+            <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+              <Link
+                to="/projects"
+                className="bg-neonPurple text-white font-audiowide text-xs tracking-wider px-8 py-4 rounded-2xl hover:shadow-[0_0_25px_rgba(160,32,240,0.5)] transition-all active:scale-95 flex items-center justify-center text-center w-full sm:w-auto"
+              >
+                VER PROJETOS
+              </Link>
+              
+              <a
+                href="#contact"
+                className="border-2 border-slate-800 hover:border-neonCyan text-slate-300 hover:text-white px-8 py-4 rounded-2xl transition-all duration-300 font-audiowide text-xs tracking-wider flex items-center justify-center text-center w-full sm:w-auto"
+              >
+                FALE COMIGO
+              </a>
+            </div>
+
+          </div>
+        </FadeIn>
+
+        <div className="hidden md:flex justify-end items-center w-full h-[450px] relative">
+          <div
+            className={`transition-all duration-1000 ease-out transform ${
+              showHead
+                ? "translate-x-0 opacity-100 blur-0"
+                : "translate-x-12 opacity-0 blur-md"
+            } w-[85%] h-full relative`}
+          >
+            <img
+              src={HeadIcon}
+              alt="DevLab Head Tech"
+              className="w-full h-full object-contain drop-shadow-[0_0_35px_rgba(160,32,240,0.3)] animate-float"
+            />
+          </div>
         </div>
+
       </div>
     </section>
   );

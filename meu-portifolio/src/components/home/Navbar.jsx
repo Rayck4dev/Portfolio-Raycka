@@ -1,7 +1,7 @@
 import DevLabLogo from "@/assets/name_dev_crop.png";
 import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 import { useState, useEffect } from "react";
-import { HiMenu, HiX } from "react-icons/hi"; // ícones hamburguer
+import { HiMenu, HiX } from "react-icons/hi"; 
 
 export default function Navbar() {
   const [active, setActive] = useState("home");
@@ -14,6 +14,7 @@ export default function Navbar() {
       "technologies",
       "softskills",
       "hardskills",
+      "contact",
       "about",
     ];
 
@@ -39,8 +40,7 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 w-full bg-black/80 backdrop-blur-sm z-50">
       <div className="w-full px-6 py-4 flex items-center justify-between">
-        {/* LOGO */}
-        <img src={DevLabLogo} alt="DEV LAB" className="w-28 sm:w-32" />
+=        <img src={DevLabLogo} alt="DEV LAB" className="w-28 sm:w-32" />
 
         {/* BOTÃO MOBILE */}
         <button
@@ -126,6 +126,18 @@ export default function Navbar() {
           </li>
           <li>
             <a
+              href="#contact"
+              className={`${
+                active === "contact"
+                  ? "nav-active text-neonPurple"
+                  : "hover:text-neonPurple"
+              } transition`}
+            >
+              Contact
+            </a>
+          </li>
+          <li>
+            <a
               href="#about"
               className={`${
                 active === "about"
@@ -134,18 +146,6 @@ export default function Navbar() {
               } transition`}
             >
               About Me
-            </a>
-          </li>
-          <li>
-            <a
-              href="#contact"
-              className={`${
-                active === "about"
-                  ? "nav-active text-neonPurple"
-                  : "hover:text-neonPurple"
-              } transition`}
-            >
-              Contact
             </a>
           </li>
           <li>
@@ -187,8 +187,8 @@ export default function Navbar() {
           <li><a href="#technologies" onClick={() => setIsOpen(false)}>Technologies</a></li>
           <li><a href="#softskills" onClick={() => setIsOpen(false)}>Soft-Skills</a></li>
           <li><a href="#hardskills" onClick={() => setIsOpen(false)}>Hard-Skills</a></li>
-          <li><a href="#about" onClick={() => setIsOpen(false)}>About Me</a></li>
           <li><a href="#contact" onClick={() => setIsOpen(false)}>Contact</a></li>
+          <li><a href="#about" onClick={() => setIsOpen(false)}>About Me</a></li>
           <li className="flex gap-4 text-xl">
             <a href="https://www.linkedin.com/in/raycka-messa-de-castro-408264327" target="_blank"><FaLinkedin /></a>
             <a href="https://github.com/Rayck4dev/" target="_blank"><FaGithub /></a>
