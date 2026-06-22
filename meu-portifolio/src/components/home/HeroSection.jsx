@@ -1,11 +1,10 @@
-"use client"; // Se você estiver usando alguma estrutura híbrida, senão pode manter
-
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import HeadIcon from "@/assets/headlog_dev.png";
 import BinaryBackground from "@/components/ui/BinaryBackground";
 import FadeIn from "@/components/ui/FadeIn";
 import TypingText from "@/components/ui/TypingText";
+import { FiDownload } from "react-icons/fi"; 
 
 export default function HeroSection() {
   const [showHead, setShowHead] = useState(false);
@@ -20,10 +19,8 @@ export default function HeroSection() {
       <BinaryBackground />
 
       <div className="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center relative z-10">
-        
         <FadeIn>
           <div className="flex flex-col items-center md:items-start text-center md:text-left">
-            
             <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 mb-6 w-fit">
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
@@ -42,32 +39,45 @@ export default function HeroSection() {
               Sua marca merece um <br />
               <div className="h-[1.2em] w-full flex justify-center md:justify-start items-center text-neonCyan drop-shadow-[0_0_15px_rgba(64,224,208,0.2)]">
                 <TypingText
-                  texts={["Site Moderno", "Design Responsivo", "Sistema de Elite"]}
+                  texts={[
+                    "Site Moderno",
+                    "Design Responsivo",
+                    "Sistema de Elite",
+                  ]}
                 />
               </div>
             </h1>
 
             <p className="max-w-lg text-slate-400 font-light text-base md:text-lg leading-relaxed mb-8">
-              Desenvolvimento de Sistemas Fullstack, Aplicações mobile e Websites com a engenharia e identidade de elite da{" "}
+              Desenvolvimento de Sistemas Fullstack, Aplicações mobile e
+              Websites com a engenharia e identidade de elite da{" "}
               <strong className="text-neonPurple font-bold">DevLab</strong>.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+            <div className="flex flex-col sm:flex-row flex-wrap gap-4 w-full sm:w-auto">
               <Link
                 to="/projects"
-                className="bg-neonPurple text-white font-audiowide text-xs tracking-wider px-8 py-4 rounded-2xl hover:shadow-[0_0_25px_rgba(160,32,240,0.5)] transition-all active:scale-95 flex items-center justify-center text-center w-full sm:w-auto"
+                className="bg-neonPurple text-white font-audiowide text-xs tracking-wider px-6 py-4 rounded-2xl hover:shadow-[0_0_25px_rgba(160,32,240,0.5)] transition-all active:scale-95 flex items-center justify-center text-center w-full sm:w-auto"
               >
                 VER PROJETOS
               </Link>
-              
+
               <a
                 href="#contact"
-                className="border-2 border-slate-800 hover:border-neonCyan text-slate-300 hover:text-white px-8 py-4 rounded-2xl transition-all duration-300 font-audiowide text-xs tracking-wider flex items-center justify-center text-center w-full sm:w-auto"
+                className="border-2 border-slate-800 hover:border-neonCyan text-slate-300 hover:text-white px-6 py-4 rounded-2xl transition-all duration-300 font-audiowide text-xs tracking-wider flex items-center justify-center text-center w-full sm:w-auto"
               >
                 FALE COMIGO
               </a>
-            </div>
 
+              <a
+                href="/Curriculo_RayckaCastro_FullStack.pdf"
+                download="Curriculo_RayckaCastro_FullStack.pdf"
+                className="border-2 border-slate-800 hover:border-neonPink text-slate-300 hover:text-white px-6 py-4 rounded-2xl transition-all duration-300 font-audiowide text-xs tracking-wider flex items-center justify-center gap-2 text-center w-full sm:w-auto cursor-pointer group"
+              >
+                <FiDownload className="text-base text-slate-400 group-hover:text-neonPink transition-colors duration-300" />
+                <span>CURRÍCULO</span>
+              </a>
+            </div>
           </div>
         </FadeIn>
 
@@ -86,7 +96,6 @@ export default function HeroSection() {
             />
           </div>
         </div>
-
       </div>
     </section>
   );
