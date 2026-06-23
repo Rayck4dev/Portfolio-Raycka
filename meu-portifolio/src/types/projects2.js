@@ -1,28 +1,38 @@
 export const projectsData = {
   desenvolvimento: [
     {
-      title: "HandStark",
-      desc: "Projeto de IA para detecção de gestos e comandos, além de resolução de particulas em tempo real",
+      title: "InkMaster Studio — Fine Line & Blackwork",
+      desc: "Uma interface imersiva voltada para o mercado de modificação corporal de luxo. Com um design dark agressivo e sofisticado, a plataforma prioriza o portfólio dos artistas.",
+      color: "neonRed",
+      soon: true,
+      category: "Outros",
+      image: "",
+      techs: ["React", "TypeScript", "TailwindCSS"],
+      code: "",
+    },
+    {
+      title: "Apex Capital — Private Banking & Web3",
+      desc: "Landing Page institucional de alta conversão para o nicho de investimentos de alto padrão.",
       color: "neonBlue",
       soon: true,
       category: "Outros",
       image: "",
-      techs: ["Python", "Nextjs", "TailwindCSS", "API REST", "Mediapipe"],
-      code: "",
-    },
-    {
-      title: "Barbearia Corte Fino",
-      desc: "Site institucional Barbearia Corte Fino, com o objetivo de apresentar a empresa e seus serviços",
-      color: "neonYellow",
-      soon: true,
-      category: "Outros",
-      image: "",
-      techs: ["Nextjs", "TypeScript", "TailwindCSS"],
+      techs: ["Nextjs", "TypeScript", "TailwindCSS", "API REST"],
       code: "",
     },
   ],
-
+  
   recentes: [
+   {
+      title: "Barbearia Corte Fino",
+      desc: "Website institucional para barbearia com design moderno e responsivo",
+      color: "neonYellow",
+      category: "Outros",
+      link: "https://barbershopcortefino.vercel.app/",
+      image: "/home_corte_fino.png",
+      techs: ["React", "TypeScript", "TailwindCSS"],
+      code: "https://github.com/Rayck4dev/Corte-Fino-Barbearia",
+    },
     {
       title: "Dashboard ETL - Auxílio Gás 2025",
       desc: "Dashboard interativo para apresentação e análise de dados do programa Auxílio Gás, com foco em auditoria e mapeamento de beneficiários.",
@@ -41,16 +51,6 @@ export const projectsData = {
       code: "https://github.com/Rayck4dev/ShopSmart-App",
     },
     {
-      title: "LinkTree para Piscicultura",
-      desc: "Aplicação web moderna para apresentar catálogo de peixes, contatos e informações da piscicultura de forma simples e intuitiva",
-      color: "neonGreen",
-      link: "https://pisciculturamagraoalevinos.netlify.app/",
-      category: "Site Completo",
-      image: "home_fish.png",
-      techs: ["React", "TailwindCSS", "JavaScript"],
-      code: "https://github.com/Rayck4dev/piscicultura-linktree",
-    },
-    {
       title: "ShopSmart App",
       desc: "Aplicativo mobile para gestão de compras no supermercado, desenvolvido para a disciplina de Desenvolvimento Mobile",
       color: "neonYellow",
@@ -67,8 +67,18 @@ export const projectsData = {
       code: "https://github.com/Rayck4dev/ShopSmart-App",
     },
   ],
-
+  
   landing: [
+    {
+      title: "Barbearia Corte Fino",
+      desc: "Website institucional para barbearia com design moderno e responsivo",
+      color: "neonYellow",
+      category: "Outros",
+      link: "https://barbershopcortefino.vercel.app/",
+      image: "/home_corte_fino.png",
+      techs: ["React", "TypeScript", "TailwindCSS"],
+      code: "https://github.com/Rayck4dev/Corte-Fino-Barbearia",
+    },
     {
       title: "Blog Elite Vougue",
       desc: "Blog desenvolvido para treinar habilidades em HTML5, CSS3 e JS",

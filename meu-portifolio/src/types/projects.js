@@ -1,5 +1,5 @@
 import IconDelicias from "@/assets/faviconDelicias.png.png";
-import IconFish from "@/assets/faviconfish.ico";
+import IconCorte from "@/assets/barberfavicon.ico";
 import IconShopSmart from "@/assets/shopfavicon.ico";
 
 export const projects = [
@@ -11,11 +11,11 @@ export const projects = [
     icon: IconDelicias,
   },
   {
-    title: "LinkTree para Piscicultura",
-    desc: "Aplicação web moderna para apresentar catálogo de peixes, contatos e informações da piscicultura de forma simples e intuitiva",
-    link: "https://pisciculturamagraoalevinos.netlify.app/",
-    color: "neonGreen",
-    icon: IconFish,
+    title: "Corte Fino Barbearia",
+    desc: "Website institucional para barbearia com design moderno e responsivo",
+    link: "https://barbershopcortefino.vercel.app/",
+    color: "neonOrange",
+    icon: IconCorte,
   },
   {
     title: "ShopSmart App",
