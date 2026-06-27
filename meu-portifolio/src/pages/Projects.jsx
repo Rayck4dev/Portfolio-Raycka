@@ -83,6 +83,14 @@ export default function Projects() {
           bg="bg-gradient-to-r from-neonPink/20 to-neonOrange/20"
         />
         <Section
+          id="freelance"
+          title="Freelance"
+          icon="💰"
+          intro="Projetos desenvolvidos para clientes"
+          items={projectsData.freelance}
+          bg="bg-gradient-to-r from-neonBlue/20 to-neonYellow/20"
+        />  
+        <Section
           id="landing"
           title="Landing Pages"
           icon="🌐"

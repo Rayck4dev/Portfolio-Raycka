@@ -1,6 +1,6 @@
 import IconDelicias from "@/assets/faviconDelicias.png.png";
 import IconCorte from "@/assets/barberfavicon.ico";
-import IconShopSmart from "@/assets/shopfavicon.ico";
+import IconInkMaster from "@/assets/icon_white.png";
 
 export const projects = [
   {
@@ -18,10 +18,10 @@ export const projects = [
     icon: IconCorte,
   },
   {
-    title: "ShopSmart App",
-    desc: "Aplicativo mobile para compra e venda de produtos, desenvolvido para a disciplina de Desenvolvimento Mobile",
-    link: "https://github.com/Rayck4dev/ShopSmart-App",
-    color: "neonYellow",
-    icon: IconShopSmart,
+    title: "InkMaster Studio",
+    desc: "Uma interface imersiva voltada para o mercado de modificação corporal de luxo. Com um design dark agressivo e sofisticado, a plataforma prioriza o portfólio dos artistas.",
+      link: "https://inkmaster-studio.vercel.app/",
+    color: "neonPurple",
+    icon: IconInkMaster,
   },
 ];

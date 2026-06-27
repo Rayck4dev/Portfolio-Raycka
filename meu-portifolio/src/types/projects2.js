@@ -1,29 +1,16 @@
 export const projectsData = {
-  desenvolvimento: [
-    {
-      title: "InkMaster Studio — Fine Line & Blackwork",
-      desc: "Uma interface imersiva voltada para o mercado de modificação corporal de luxo. Com um design dark agressivo e sofisticado, a plataforma prioriza o portfólio dos artistas.",
-      color: "neonRed",
-      soon: true,
-      category: "Outros",
-      image: "",
-      techs: ["React", "TypeScript", "TailwindCSS"],
-      code: "",
-    },
-    {
-      title: "Apex Capital — Private Banking & Web3",
-      desc: "Landing Page institucional de alta conversão para o nicho de investimentos de alto padrão.",
-      color: "neonBlue",
-      soon: true,
-      category: "Outros",
-      image: "",
-      techs: ["Nextjs", "TypeScript", "TailwindCSS", "API REST"],
-      code: "",
-    },
-  ],
-  
   recentes: [
-   {
+    {
+      title: "InkMaster Studio",
+      desc: "Uma interface imersiva voltada para o mercado de modificação corporal de luxo. Com um design dark agressivo e sofisticado, a plataforma prioriza o portfólio dos artistas.",
+      color: "neonPurple",
+      category: "Outros",
+      link: "https://inkmaster-studio.vercel.app/",
+      image: "/InkMaster_Home.png",
+      techs: ["Nextjs", "TypeScript", "TailwindCSS"],
+      code: "https://github.com/Rayck4dev/InkMaster-Studio",
+    },
+    {
       title: "Barbearia Corte Fino",
       desc: "Website institucional para barbearia com design moderno e responsivo",
       color: "neonYellow",
@@ -48,27 +35,65 @@ export const projectsData = {
         "Apache Hop",
         "PostgreSQL",
       ],
-      code: "https://github.com/Rayck4dev/ShopSmart-App",
-    },
-    {
-      title: "ShopSmart App",
-      desc: "Aplicativo mobile para gestão de compras no supermercado, desenvolvido para a disciplina de Desenvolvimento Mobile",
-      color: "neonYellow",
-      category: "Trabalho Acadêmico",
-      image: "shopsmartlogoofc.png",
-      techs: [
-        "Mobile",
-        "TypeScript",
-        "React Native",
-        "TailwindCSS",
-        "Supabase",
-        "API REST",
-      ],
-      code: "https://github.com/Rayck4dev/ShopSmart-App",
     },
   ],
-  
+
+  desenvolvimento: [
+    {
+      title: "Apex Capital — Private Banking & Web3",
+      desc: "Landing Page institucional de alta conversão para o nicho de investimentos de alto padrão.",
+      color: "neonBlue",
+      soon: true,
+      category: "Outros",
+      image: "",
+      techs: ["Nextjs", "TypeScript", "TailwindCSS", "API REST"],
+      code: "",
+    },
+    {
+      title: "DevForge - SaaS Utility for Developers",
+      desc: "Utilitário de teste de webhook e demais funcionalidades para desenvolvedores",
+      color: "neonMagenta",
+      soon: true,
+      category: "Outros",
+      image: "",
+      techs: ["Em discussão"],
+      code: "",
+    }
+  ],
+
+  freelance: [
+    {
+      title: "LinkTree para Piscicultura",
+      desc: "Aplicação web moderna para apresentar catálogo de peixes, contatos e informações da piscicultura de forma simples e intuitiva",
+      color: "neonGreen",
+      link: "https://pisciculturamagraoalevinos.netlify.app/",
+      category: "Site Completo",
+      image: "home_fish.png",
+      techs: ["React", "TailwindCSS", "JavaScript"],
+      code: "https://github.com/Rayck4dev/piscicultura-linktree",
+    },
+    {
+      title: "Delícias no Pote 2.0",
+      desc: "Sistema de catálogo digital com painel administrativo e CRUD completo, permitindo gestão de produtos em tempo real",
+      color: "neonPink",
+      link: "https://deliciasnopoterm.netlify.app",
+      category: "Site Completo",
+      image: "/home_del.png",
+      techs: ["React", "Supabase", "TailwindCSS"],
+      code: "https://github.com/Rayck4dev/Cardapio-Digital_2.0",
+    },
+  ],
   landing: [
+    {
+      title: "InkMaster Studio",
+      desc: "Uma interface imersiva voltada para o mercado de modificação corporal de luxo. Com um design dark agressivo e sofisticado, a plataforma prioriza o portfólio dos artistas.",
+      color: "neonPurple",
+      category: "Outros",
+      link: "https://inkmaster-studio.vercel.app/",
+      image: "/InkMaster_Home.png",
+      techs: ["Nextjs", "TypeScript", "TailwindCSS"],
+      code: "https://github.com/Rayck4dev/InkMaster-Studio",
+    },
     {
       title: "Barbearia Corte Fino",
       desc: "Website institucional para barbearia com design moderno e responsivo",
@@ -156,16 +181,6 @@ export const projectsData = {
   ],
 
   outros: [
-    {
-      title: "LinkTree para Piscicultura",
-      desc: "Aplicação web moderna para apresentar catálogo de peixes, contatos e informações da piscicultura de forma simples e intuitiva",
-      color: "neonGreen",
-      link: "https://pisciculturamagraoalevinos.netlify.app/",
-      category: "Site Completo",
-      image: "home_fish.png",
-      techs: ["React", "TailwindCSS", "JavaScript"],
-      code: "https://github.com/Rayck4dev/piscicultura-linktree",
-    },
     {
       title: "Dashboard de Filmes",
       desc: "Dashboard criado para aprendizado durante a Imersão Alura, com dados reais da API TMDb",

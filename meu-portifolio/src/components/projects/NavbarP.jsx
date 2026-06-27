@@ -3,6 +3,18 @@ import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import { HiMenu, HiX } from "react-icons/hi";
 
+// Mapeamento estático mantido para o Tailwind compilar as cores perfeitamente
+const neonColors = {
+  neonPurple: { active: "text-neonPurple", hover: "hover:text-neonPurple" },
+  neonCyan: { active: "text-neonCyan", hover: "hover:text-neonCyan" },
+  neonRed: { active: "text-neonRed", hover: "hover:text-neonRed" },
+  neonGold: { active: "text-neonGold", hover: "hover:text-neonGold" },
+  neonOrange: { active: "text-neonOrange", hover: "hover:text-neonOrange" },
+  neonGreen: { active: "text-neonGreen", hover: "hover:text-neonGreen" },
+  neonBlue: { active: "text-neonBlue", hover: "hover:text-neonBlue" },
+  neonPink: { active: "text-neonPink", hover: "hover:text-neonPink" },
+};
+
 export default function NavbarProjects() {
   const [active, setActive] = useState("recentes");
   const [isOpen, setIsOpen] = useState(false);
@@ -14,7 +26,7 @@ export default function NavbarProjects() {
       "desenvolvimento",
       "ecommerce",
       "landing",
-      "logomarcas",
+      "freelance",
       "academicos",
       "outros",
     ];
@@ -64,13 +76,19 @@ export default function NavbarProjects() {
             href="#recentes"
             label="Recent"
             active={active === "recentes"}
-            color="neonCyan"
+            color="neonBlue"
           />
           <NavItem
             href="#desenvolvimento"
             label="Coming Soon"
             active={active === "desenvolvimento"}
             color="neonRed"
+          />
+          <NavItem
+            href="#freelance"
+            label="freelance"
+            active={active === "freelance"}
+            color="neonGreen"
           />
           <NavItem
             href="#landing"
@@ -96,7 +114,7 @@ export default function NavbarProjects() {
               href="https://www.linkedin.com/in/raycka-messa-de-castro-408264327"
               target="_blank"
               aria-label="LinkedIn"
-              className="text-xl hover:text-neonBlue transition"
+              className="text-xl hover:text-neonBlue transition duration-300"
             >
               <FaLinkedin />
             </a>
@@ -106,17 +124,17 @@ export default function NavbarProjects() {
               href="https://github.com/Rayck4dev/"
               target="_blank"
               aria-label="GitHub"
-              className="text-xl hover:text-neonPurple transition"
+              className="text-xl hover:text-neonPurple transition duration-300"
             >
               <FaGithub />
             </a>
           </li>
           <li>
             <a
-              href="https://www.instagram.com/raycka_dev"
+              href="https://www.instagram.com/castroo.ray"
               target="_blank"
               aria-label="Instagram"
-              className="text-xl hover:text-neonPink transition"
+              className="text-xl hover:text-neonPink transition duration-300"
             >
               <FaInstagram />
             </a>
@@ -124,9 +142,9 @@ export default function NavbarProjects() {
         </ul>
       </div>
 
-      {/* MENU MOBILE SEPARADO */}
+      {/* MENU MOBILE */}
       {isOpen && (
-        <ul className="md:hidden flex flex-col items-center gap-6 py-6 bg-black/90 text-white font-audiowide text-sm animate-slideDown">
+        <ul className="md:hidden flex flex-col items-center gap-6 py-6 bg-black/95 text-white font-audiowide text-sm">
           <NavItem
             href="/"
             label="Home"
@@ -138,7 +156,7 @@ export default function NavbarProjects() {
             href="#recentes"
             label="Recent"
             active={active === "recentes"}
-            color="neonCyan"
+            color="neonBlue"
             onClick={() => setIsOpen(false)}
           />
           <NavItem
@@ -149,10 +167,10 @@ export default function NavbarProjects() {
             onClick={() => setIsOpen(false)}
           />
           <NavItem
-            href="#ecommerce"
-            label="E-commerce"
-            active={active === "ecommerce"}
-            color="neonBlue"
+            href="#freelance"
+            label="freelance"
+            active={active === "freelance"}
+            color="neonGreen"
             onClick={() => setIsOpen(false)}
           />
           <NavItem
@@ -181,24 +199,21 @@ export default function NavbarProjects() {
             <a
               href="https://www.linkedin.com/in/raycka-messa-de-castro-408264327"
               target="_blank"
-              aria-label="LinkedIn"
-              className="hover:text-neonBlue transition"
+              className="hover:text-neonBlue transition duration-300"
             >
               <FaLinkedin />
             </a>
             <a
               href="https://github.com/Rayck4dev/"
               target="_blank"
-              aria-label="GitHub"
-              className="hover:text-neonPurple transition"
+              className="hover:text-neonPurple transition duration-300"
             >
               <FaGithub />
             </a>
             <a
-              href="https://www.instagram.com/raycka_dev"
+              href="https://www.instagram.com/castroo.ray"
               target="_blank"
-              aria-label="Instagram"
-              className="hover:text-neonPink transition"
+              className="hover:text-neonPink transition duration-300"
             >
               <FaInstagram />
             </a>
@@ -209,15 +224,20 @@ export default function NavbarProjects() {
   );
 }
 
+// Subcomponente NavItem ajustado para usar base branca por padrão
 function NavItem({ href, label, active, color, onClick }) {
+  const neonStyle = neonColors[color] || { active: "text-white", hover: "hover:text-white" };
+
   return (
     <li>
       <a
         href={href}
         onClick={onClick}
-        className={`${
-          active ? `nav-active text-${color}` : `hover:text-${color}`
-        } transition`}
+        className={`transition duration-300 ${
+          active 
+            ? `nav-active ${neonStyle.active}` 
+            : `text-white ${neonStyle.hover}`
+        }`}
       >
         {label}
       </a>

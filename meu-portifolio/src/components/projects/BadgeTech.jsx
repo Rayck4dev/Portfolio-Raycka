@@ -23,11 +23,13 @@ import {
   SiMediapipe,
 } from "react-icons/si";
 
+import { GoDiscussionOutdated } from "react-icons/go";
 import { TbApi, TbBrandReactNative, TbBrandNextjs } from "react-icons/tb";
 import { DiDatabase } from "react-icons/di";
 
 export default function BadgeTech({ tech }) {
   const iconMap = {
+    "Em discussão": <GoDiscussionOutdated />,
     React: <FaReact />,
     "React Native": <TbBrandReactNative />,
     HTML5: <FaHtml5 />,
@@ -54,6 +56,7 @@ export default function BadgeTech({ tech }) {
   };
 
   const colorMap = {
+    "Em discussão": "text-gray-400 border-gray-400",
     React: "text-neonCyan border-neonCyan",
     HTML5: "text-neonRed border-neonRed",
     CSS3: "text-neonBlue border-neonBlue",
