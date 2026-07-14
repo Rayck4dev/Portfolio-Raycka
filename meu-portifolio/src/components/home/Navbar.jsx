@@ -168,7 +168,7 @@ export default function Navbar() {
           </li>
           <li>
             <a
-              href="https://www.instagram.com/raycka_dev"
+              href="https://www.instagram.com/castroo.ray"
               target="_blank"
               className="text-xl hover:text-neonPink transition"
             >
@@ -192,7 +192,7 @@ export default function Navbar() {
           <li className="flex gap-4 text-xl">
             <a href="https://www.linkedin.com/in/raycka-messa-de-castro-408264327" target="_blank"><FaLinkedin /></a>
             <a href="https://github.com/Rayck4dev/" target="_blank"><FaGithub /></a>
-            <a href="https://www.instagram.com/raycka_dev" target="_blank"><FaInstagram/></a>
+            <a href="https://www.instagram.com/castroo.ray" target="_blank"><FaInstagram/></a>
           </li>
         </ul>
       )}

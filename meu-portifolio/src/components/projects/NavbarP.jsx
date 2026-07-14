@@ -224,7 +224,6 @@ export default function NavbarProjects() {
   );
 }
 
-// Subcomponente NavItem ajustado para usar base branca por padrão
 function NavItem({ href, label, active, color, onClick }) {
   const neonStyle = neonColors[color] || { active: "text-white", hover: "hover:text-white" };
 
