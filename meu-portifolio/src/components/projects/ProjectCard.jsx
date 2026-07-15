@@ -1,8 +1,13 @@
 import PixelButton from "@/components/ui/PixelButton";
 import BadgeTech from "./BadgeTech";
+import { useTranslation } from "react-i18next";
 
 export default function ProjectCard({ project }) {
-  const { title, desc, color, soon, link, code, image, techs } = project;
+  const { t, i18n } = useTranslation();
+  const { title, title_en, desc, desc_en, color, soon, link, code, image, techs } = project;
+
+  const displayTitle = i18n.language === 'en' && title_en ? title_en : title;
+  const displayDesc = i18n.language === 'en' && desc_en ? desc_en : desc;
 
   return (
     <div
@@ -19,16 +24,16 @@ export default function ProjectCard({ project }) {
         >
           <img
             src={image}
-            alt={title}
+            alt={displayTitle}
             className="w-full h-auto object-contain"
           />
         </div>
       )}
 
-      <h3 className="text-xl font-audiowide mb-2 text-neonCyan">{title}</h3>
+      <h3 className="text-xl font-audiowide mb-2 text-neonCyan">{displayTitle}</h3>
 
       <p className="text-white/70 text-sm font-bricolage mb-3 line-clamp-3">
-        {desc}
+        {displayDesc}
       </p>
 
       {techs && (
@@ -42,15 +47,15 @@ export default function ProjectCard({ project }) {
       <div className="flex gap-4">
         {link && (
           <a href={link} target="_blank" rel="noreferrer">
-            <PixelButton color={color}>Ver Projeto</PixelButton>
+            <PixelButton color={color}>{t('projectsPage.viewProject')}</PixelButton>
           </a>
         )}
         {code && (
           <a href={code} target="_blank" rel="noreferrer">
-            <PixelButton color={color}>Ver Código</PixelButton>
+            <PixelButton color={color}>{t('projectsPage.viewCode')}</PixelButton>
           </a>
         )}
-        {soon && <PixelButton color={color}>🚀 Em breve</PixelButton>}
+        {soon && <PixelButton color={color}>{t('projectsPage.comingSoon')}</PixelButton>}
       </div>
     </div>
   );

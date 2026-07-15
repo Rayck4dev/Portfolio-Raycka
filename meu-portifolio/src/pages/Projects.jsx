@@ -5,8 +5,10 @@ import Section from "@/components/projects/Section";
 import { projectsData } from "@/types/projects2";
 import { motion } from "framer-motion";
 import TechMotion from "@/components/ui/TechMotion";
+import { useTranslation } from "react-i18next";
 
 export default function Projects() {
+  const { t } = useTranslation();
   useEffect(() => {
     document.title = "Raycka Castro | FullStack Developer";
   }, []);
@@ -33,7 +35,7 @@ export default function Projects() {
                 backgroundSize: "200% 200%",
               }}
             >
-              🚀 Meus Projetos
+              {t('projectsPage.title')}
             </motion.span>
           </motion.h1>
 
@@ -44,10 +46,7 @@ export default function Projects() {
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.3 }}
           >
-            Aqui você encontra uma coleção dos meus projetos organizados por
-            categoria e status. Explore cada seção para conhecer mais sobre meu
-            trabalho em diferentes áreas como sistemas inteligentes, landing
-            pages e aplicações completas.
+            {t('projectsPage.desc')}
           </motion.p>
 
           <div className="mt-36 w-full overflow-hidden relative">
@@ -68,50 +67,42 @@ export default function Projects() {
 
         <Section
           id="recentes"
-          title="Recentes"
+          title={t('projectsPage.recent')}
           icon="✨"
-          intro="Últimos projetos lançados, destacando evolução contínua em design, arquitetura e experiência do usuário"
+          intro={t('projectsPage.recentIntro')}
           items={projectsData.recentes}
           bg="bg-gradient-to-r from-neonBlue/20 to-neonPurple/20"
         />
         <Section
           id="desenvolvimento"
-          title="Em Desenvolvimento"
+          title={t('projectsPage.developing')}
           icon="🚀"
-          intro="Projetos em fase de implementação, onde ideias estão sendo transformadas em sistemas funcionais com testes e melhorias constantes"
+          intro={t('projectsPage.developingIntro')}
           items={projectsData.desenvolvimento}
           bg="bg-gradient-to-r from-neonPink/20 to-neonOrange/20"
         />
         <Section
-          id="freelance"
-          title="Freelance"
-          icon="💰"
-          intro="Projetos desenvolvidos para clientes"
-          items={projectsData.freelance}
-          bg="bg-gradient-to-r from-neonBlue/20 to-neonYellow/20"
-        />  
-        <Section
           id="landing"
-          title="Landing Pages"
+          title={t('projectsPage.landing')}
           icon="🌐"
-          intro="Páginas estáticas desenvolvidas para treinar habilidades de FrontEnd, design responsivo e otimização de conversão"
+          intro={t('projectsPage.landingIntro')}
           items={projectsData.landing}
           bg="bg-gradient-to-r from-neonGreen/20 to-neonCyan/20"
         />
 
         <Section
           id="academicos"
-          title="Trabalhos Acadêmicos"
+          title={t('projectsPage.academic')}
           icon="🎓"
-          intro="Projetos realizados em contexto acadêmico, aplicando teoria em soluções práticas e explorando diferentes linguagens e frameworks"
+          intro={t('projectsPage.academicIntro')}
           items={projectsData.academicos}
           bg="bg-gradient-to-r from-neonOrange/20 to-neonMagenta/20"
         />
         <Section
           id="outros"
-          title="Outros Projetos"
+          title={t('projectsPage.others')}
           icon="💻"
-          intro="Projetos desenvolvidos durantes minha participação em Bootcamps, Imersões e Hacktowns"
+          intro={t('projectsPage.othersIntro')}
           items={projectsData.outros}
           bg="bg-gradient-to-r from-neonPink/20 to-neonBlue/20"
         />

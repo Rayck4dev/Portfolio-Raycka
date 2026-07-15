@@ -1,0 +1,111 @@
+{
+  "nav": {
+    "home": "Home",
+    "topProjects": "Top Projects",
+    "projects": "Projetos",
+    "technologies": "Tecnologias",
+    "softSkills": "Soft-Skills",
+    "hardSkills": "Hard-Skills",
+    "contact": "Contato",
+    "about": "Sobre Mim",
+    "academic": "Acadêmicos",
+    "otherProjects": "Outros Projetos",
+    "recent": "Recentes",
+    "comingSoon": "Em Breve",
+    "landingPages": "Landing Pages"
+  },
+  "hero": {
+    "available": "Disponível para novos projetos",
+    "specialist": "Especialista em Interfaces & Sistemas",
+    "brandDeserves": "Sua marca merece um",
+    "typing": {
+      "modernSite": "Site Moderno",
+      "responsiveDesign": "Design Responsivo",
+      "eliteSystem": "Sistema de Elite"
+    },
+    "description": "Desenvolvimento de Sistemas Fullstack, Aplicações mobile e Websites com a engenharia e identidade de elite da ",
+    "devlab": "DevLab",
+    "viewProjects": "VER PROJETOS",
+    "contactMe": "FALE COMIGO",
+    "resume": "CURRÍCULO"
+  },
+  "about": {
+    "title": "Sobre Mim",
+    "p1": "Olá! Meu nome é Raycka e sou uma desenvolvedora apaixonada por criar interfaces modernas, funcionais e visualmente marcantes. Meu foco é transformar ideias em experiências digitais fluidas e intuitivas.",
+    "p2": "Trabalho com desenvolvimento Front-End e Back-End, sempre buscando escrever código limpo, organizado e escalável. Gosto de explorar novas tecnologias todos os dias, entender como as coisas funcionam por trás dos bastidores e evoluir constantemente como profissional.",
+    "p3": "Além da parte técnica, valorizo muito a colaboração, comunicação e criatividade. Acredito que grandes projetos nascem quando pessoas unem suas habilidades e constroem algo incrível juntas."
+  },
+  "hardSkills": {
+    "title": "Hard Skills",
+    "desc": "Competências técnicas que aplico para construir aplicações modernas, eficientes e bem estruturadas",
+    "frontend": "Desenvolvimento Front-End",
+    "frontendDesc": "Criação de interfaces modernas, responsivas e acessíveis",
+    "backend": "Desenvolvimento Back-End",
+    "backendDesc": "APIs REST, lógica de negócio e integrações",
+    "database": "Banco de Dados",
+    "databaseDesc": "Modelagem, consultas SQL e integração com aplicações",
+    "architecture": "Arquitetura de Componentes",
+    "architectureDesc": "Organização, reuso e escalabilidade no front-end",
+    "deploy": "Deploy & Hospedagem",
+    "deployDesc": "Publicação de aplicações em produção",
+    "bestPractices": "Boas Práticas",
+    "bestPracticesDesc": "Versionamento, clean code e otimização de performance"
+  },
+  "softSkills": {
+    "title": "Soft Skills",
+    "desc": "Competências comportamentais que fortalecem minha atuação como desenvolvedora e potencializam cada projeto",
+    "communication": "Comunicação",
+    "organization": "Organização",
+    "problemSolving": "Resolução de Problemas",
+    "teamwork": "Trabalho em Equipe",
+    "adaptability": "Adaptabilidade",
+    "proactivity": "Proatividade"
+  },
+  "techStack": {
+    "title": "Technologies",
+    "desc": "Tecnologias que estudo e aplico para construir interfaces modernas, sistemas eficientes e aplicações completas",
+    "frontend": "Front-End",
+    "backend": "Back-End",
+    "dataInfra": "Dados e Infraestrutura",
+    "databases": "Bancos de Dados",
+    "deploy": "Deploy",
+    "tools": "Ferramentas & Outros"
+  },
+  "featured": {
+    "title": "Principais Projetos",
+    "desc": "Aqui estão alguns dos meus projetos favoritos — cada um com sua identidade visual, propósito e desafios únicos. Explore e veja como aplico design, código e criatividade em cada entrega.",
+    "academicWork": "Trabalho Acadêmico",
+    "comingSoon": "Em breve",
+    "viewAcademic": "Ver Trabalho Acadêmico",
+    "viewMore": "Ver mais"
+  },
+  "contactPage": {
+    "subtitle": "CONTATO",
+    "title1": "VAMOS INICIAR O SEU ",
+    "title2": "PROJETO?",
+    "desc": "Tenho interesse em trabalhos freelancers, desenvolvimento web e oportunidades para contribuir em projetos inovadores.",
+    "ctaTitle": "Conexão Direta",
+    "ctaDesc": "Clique no botão abaixo para iniciar uma conversa diretamente no meu WhatsApp.",
+    "submit": "CHAMAR NO WHATSAPP"
+  },
+  "footer": {
+    "rights": "Todos os direitos reservados."
+  },
+  "projectsPage": {
+    "title": "🚀 Meus Projetos",
+    "desc": "Aqui você encontra uma coleção dos meus projetos organizados por categoria e status. Explore cada seção para conhecer mais sobre meu trabalho em diferentes áreas como sistemas inteligentes, landing pages e aplicações completas.",
+    "recent": "Recentes",
+    "recentIntro": "Últimos projetos lançados, destacando evolução contínua em design, arquitetura e experiência do usuário",
+    "developing": "Em Desenvolvimento",
+    "developingIntro": "Projetos em fase de implementação, onde ideias estão sendo transformadas em sistemas funcionais com testes e melhorias constantes",
+    "landing": "Landing Pages",
+    "landingIntro": "Páginas estáticas desenvolvidas para treinar habilidades de FrontEnd, design responsivo e otimização de conversão",
+    "academic": "Trabalhos Acadêmicos",
+    "academicIntro": "Projetos realizados em contexto acadêmico, aplicando teoria em soluções práticas e explorando diferentes linguagens e frameworks",
+    "others": "Outros Projetos",
+    "othersIntro": "Projetos desenvolvidos durante minha participação em Bootcamps, Imersões e Hackathons",
+    "viewProject": "Ver Projeto",
+    "viewCode": "Ver Código",
+    "comingSoon": "🚀 Em breve"
+  }
+}

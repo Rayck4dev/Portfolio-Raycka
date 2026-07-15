@@ -1,0 +1,111 @@
+{
+  "nav": {
+    "home": "Home",
+    "topProjects": "Top Projects",
+    "projects": "Projects",
+    "technologies": "Technologies",
+    "softSkills": "Soft-Skills",
+    "hardSkills": "Hard-Skills",
+    "contact": "Contact",
+    "about": "About Me",
+    "academic": "Academic",
+    "otherProjects": "Other Projects",
+    "recent": "Recent",
+    "comingSoon": "Coming Soon",
+    "landingPages": "Landing Pages"
+  },
+  "hero": {
+    "available": "Available for new projects",
+    "specialist": "Interfaces & Systems Specialist",
+    "brandDeserves": "Your brand deserves a",
+    "typing": {
+      "modernSite": "Modern Website",
+      "responsiveDesign": "Responsive Design",
+      "eliteSystem": "Elite System"
+    },
+    "description": "Fullstack Systems, Mobile Apps, and Websites development with the elite engineering and identity of ",
+    "devlab": "DevLab",
+    "viewProjects": "VIEW PROJECTS",
+    "contactMe": "CONTACT ME",
+    "resume": "RESUME"
+  },
+  "about": {
+    "title": "About Me",
+    "p1": "Hello! My name is Raycka and I am a developer passionate about creating modern, functional, and visually striking interfaces. My focus is transforming ideas into fluid and intuitive digital experiences.",
+    "p2": "I work with Front-End and Back-End development, always aiming to write clean, organized, and scalable code. I enjoy exploring new technologies every day, understanding how things work behind the scenes, and constantly evolving as a professional.",
+    "p3": "Beyond the technical side, I highly value collaboration, communication, and creativity. I believe that great projects are born when people unite their skills and build something amazing together."
+  },
+  "hardSkills": {
+    "title": "Hard Skills",
+    "desc": "Technical skills I apply to build modern, efficient, and well-structured applications",
+    "frontend": "Front-End Development",
+    "frontendDesc": "Creation of modern, responsive, and accessible interfaces",
+    "backend": "Back-End Development",
+    "backendDesc": "REST APIs, business logic, and integrations",
+    "database": "Databases",
+    "databaseDesc": "Modeling, SQL queries, and application integration",
+    "architecture": "Component Architecture",
+    "architectureDesc": "Organization, reuse, and front-end scalability",
+    "deploy": "Deploy & Hosting",
+    "deployDesc": "Publishing applications to production",
+    "bestPractices": "Best Practices",
+    "bestPracticesDesc": "Versioning, clean code, and performance optimization"
+  },
+  "softSkills": {
+    "title": "Soft Skills",
+    "desc": "Behavioral skills that strengthen my role as a developer and enhance every project",
+    "communication": "Communication",
+    "organization": "Organization",
+    "problemSolving": "Problem Solving",
+    "teamwork": "Teamwork",
+    "adaptability": "Adaptability",
+    "proactivity": "Proactivity"
+  },
+  "techStack": {
+    "title": "Technologies",
+    "desc": "Technologies I study and apply to build modern interfaces, efficient systems, and complete applications",
+    "frontend": "Front-End",
+    "backend": "Back-End",
+    "dataInfra": "Data & Infrastructure",
+    "databases": "Databases",
+    "deploy": "Deploy",
+    "tools": "Tools & Others"
+  },
+  "featured": {
+    "title": "Top Projects",
+    "desc": "Here are some of my favorite projects — each with its unique visual identity, purpose, and challenges. Explore and see how I apply design, code, and creativity in every delivery.",
+    "academicWork": "Academic Work",
+    "comingSoon": "Coming Soon",
+    "viewAcademic": "View Academic Work",
+    "viewMore": "View more"
+  },
+  "contactPage": {
+    "subtitle": "CONTACT",
+    "title1": "LET'S START YOUR ",
+    "title2": "PROJECT?",
+    "desc": "I have interest in freelance work, web development and opportunities to contribute to innovative projects.",
+    "ctaTitle": "Direct Connection",
+    "ctaDesc": "Click the button below to start a conversation directly on my WhatsApp.",
+    "submit": "CALL ON WHATSAPP"
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  },
+  "projectsPage": {
+    "title": "🚀 My Projects",
+    "desc": "Here you'll find a collection of my projects organized by category and status. Explore each section to learn more about my work in different areas like intelligent systems, landing pages, and full applications.",
+    "recent": "Recent",
+    "recentIntro": "Latest launched projects, highlighting continuous evolution in design, architecture, and user experience",
+    "developing": "In Development",
+    "developingIntro": "Projects in the implementation phase, where ideas are being transformed into functional systems with constant testing and improvements",
+    "landing": "Landing Pages",
+    "landingIntro": "Static pages developed to train FrontEnd skills, responsive design, and conversion optimization",
+    "academic": "Academic Work",
+    "academicIntro": "Projects developed in an academic context, applying theory to practical solutions and exploring different languages and frameworks",
+    "others": "Other Projects",
+    "othersIntro": "Projects developed during my participation in Bootcamps, Immersions, and Hackathons",
+    "viewProject": "View Project",
+    "viewCode": "View Code",
+    "comingSoon": "🚀 Coming Soon"
+  }
+}

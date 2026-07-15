@@ -1,8 +1,10 @@
 import PixelButton from "@/components/ui/PixelButton";
 import { projects } from "@/types/projects.js";
 import { FaTools } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 export default function FeaturedProjects() {
+  const { t, i18n } = useTranslation();
   return (
     <section
       id="featured"
@@ -13,13 +15,11 @@ export default function FeaturedProjects() {
       <div className="absolute inset-0 opacity-10 bg-[linear-gradient(transparent_95%,rgba(255,255,255,0.1)_100%)] bg-[length:100%_4px] pointer-events-none"></div>
 
       <h2 className="text-3xl sm:text-4xl lg:text-5xl font-audiowide text-neonCyan mb-8 sm:mb-14 drop-shadow-[0_0_15px_#40E0D0] text-center">
-        Top Projects
+        {t('featured.title')}
       </h2>
 
       <p className="text-white/70 text-center max-w-2xl font-bricolage text-sm sm:text-base mb-8 sm:mb-12 px-4">
-        Aqui estão alguns dos meus projetos favoritos — cada um com sua
-        identidade visual, propósito e desafios únicos. Explore e veja como
-        aplico design, código e criatividade em cada entrega.
+        {t('featured.desc')}
       </p>
 
       <Particles />
@@ -44,7 +44,7 @@ export default function FeaturedProjects() {
                 className="text-xs font-bold text-neonOrange bg-black/60 px-2 py-1 rounded shadow-[0_0_8px_var(--tw-shadow-color)]"
                 style={{ "--tw-shadow-color": "var(--neonOrange)" }}
               >
-                🎓 Trabalho Acadêmico
+                🎓 {t('featured.academicWork')}
               </span>
             )}
 
@@ -56,7 +56,7 @@ export default function FeaturedProjects() {
                   color: `var(--${p.color})`,
                 }}
               >
-                {p.category}
+                {i18n.language === 'en' && p.category_en ? p.category_en : p.category}
               </span>
             )}
 
@@ -73,11 +73,11 @@ export default function FeaturedProjects() {
             <h3
               className={`text-lg sm:text-xl lg:text-2xl font-audiowide text-${p.color}`}
             >
-              {p.title}
+              {i18n.language === 'en' && p.title_en ? p.title_en : p.title}
             </h3>
 
             <p className="text-white/80 text-center font-bricolage text-xs sm:text-sm">
-              {p.desc}
+              {i18n.language === 'en' && p.desc_en ? p.desc_en : p.desc}
             </p>
 
             <a href={p.link} target="_blank">
@@ -85,14 +85,14 @@ export default function FeaturedProjects() {
                 <PixelButton
                   color={p.title === "Pet Clini" ? "neonPink" : p.color}
                 >
-                  🚀 Em breve
+                  🚀 {t('featured.comingSoon')}
                 </PixelButton>
               ) : p.academic ? (
                 <PixelButton color={p.color}>
-                  🎓 Ver Trabalho Acadêmico
+                  🎓 {t('featured.viewAcademic')}
                 </PixelButton>
               ) : (
-                <PixelButton color={p.color}>Ver mais</PixelButton>
+                <PixelButton color={p.color}>{t('featured.viewMore')}</PixelButton>
               )}
             </a>
           </div>

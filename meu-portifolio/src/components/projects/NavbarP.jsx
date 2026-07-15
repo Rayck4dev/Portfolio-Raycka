@@ -2,8 +2,9 @@ import DevLabLogo from "@/assets/name_dev_crop.png";
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import { HiMenu, HiX } from "react-icons/hi";
+import { useTranslation } from "react-i18next";
+import LanguageToggle from "@/components/ui/LanguageToggle";
 
-// Mapeamento estático mantido para o Tailwind compilar as cores perfeitamente
 const neonColors = {
   neonPurple: { active: "text-neonPurple", hover: "hover:text-neonPurple" },
   neonCyan: { active: "text-neonCyan", hover: "hover:text-neonCyan" },
@@ -16,6 +17,7 @@ const neonColors = {
 };
 
 export default function NavbarProjects() {
+  const { t } = useTranslation();
   const [active, setActive] = useState("recentes");
   const [isOpen, setIsOpen] = useState(false);
 
@@ -26,7 +28,6 @@ export default function NavbarProjects() {
       "desenvolvimento",
       "ecommerce",
       "landing",
-      "freelance",
       "academicos",
       "outros",
     ];
@@ -52,59 +53,54 @@ export default function NavbarProjects() {
   return (
     <nav className="fixed top-0 left-0 w-full bg-black backdrop-blur-sm z-50">
       <div className="w-full px-6 py-4 flex items-center justify-between">
-        {/* LOGO */}
         <img src={DevLabLogo} alt="DEV LAB" className="w-28 sm:w-32" />
 
-        {/* BOTÃO MOBILE */}
-        <button
-          className="md:hidden text-white text-2xl"
-          onClick={() => setIsOpen(!isOpen)}
-          aria-label="Toggle menu"
-        >
-          {isOpen ? <HiX /> : <HiMenu />}
-        </button>
+        <div className="flex items-center gap-4 md:hidden">
+          <LanguageToggle />
+          <button
+            className="text-white text-2xl"
+            onClick={() => setIsOpen(!isOpen)}
+            aria-label="Toggle menu"
+          >
+            {isOpen ? <HiX /> : <HiMenu />}
+          </button>
+        </div>
 
         {/* MENU DESKTOP */}
         <ul className="hidden md:flex items-center gap-8 text-white font-audiowide text-sm">
           <NavItem
             href="/"
-            label="Home"
+            label={t('nav.home')}
             active={active === "home"}
             color="neonPurple"
           />
           <NavItem
             href="#recentes"
-            label="Recent"
+            label={t('nav.recent')}
             active={active === "recentes"}
             color="neonBlue"
           />
           <NavItem
             href="#desenvolvimento"
-            label="Coming Soon"
+            label={t('nav.comingSoon')}
             active={active === "desenvolvimento"}
             color="neonRed"
           />
           <NavItem
-            href="#freelance"
-            label="freelance"
-            active={active === "freelance"}
-            color="neonGreen"
-          />
-          <NavItem
             href="#landing"
-            label="Landing Pages"
+            label={t('nav.landingPages')}
             active={active === "landing"}
             color="neonGold"
           />
           <NavItem
             href="#academicos"
-            label="Academic"
+            label={t('nav.academic')}
             active={active === "academicos"}
             color="neonOrange"
           />
           <NavItem
             href="#outros"
-            label="Other Projects"
+            label={t('nav.otherProjects')}
             active={active === "outros"}
             color="neonRed"
           />
@@ -139,6 +135,9 @@ export default function NavbarProjects() {
               <FaInstagram />
             </a>
           </li>
+          <li>
+            <LanguageToggle />
+          </li>
         </ul>
       </div>
 
@@ -147,49 +146,42 @@ export default function NavbarProjects() {
         <ul className="md:hidden flex flex-col items-center gap-6 py-6 bg-black/95 text-white font-audiowide text-sm">
           <NavItem
             href="/"
-            label="Home"
+            label={t('nav.home')}
             active={active === "home"}
             color="neonPurple"
             onClick={() => setIsOpen(false)}
           />
           <NavItem
             href="#recentes"
-            label="Recent"
+            label={t('nav.recent')}
             active={active === "recentes"}
             color="neonBlue"
             onClick={() => setIsOpen(false)}
           />
           <NavItem
             href="#desenvolvimento"
-            label="Coming Soon"
+            label={t('nav.comingSoon')}
             active={active === "desenvolvimento"}
             color="neonRed"
             onClick={() => setIsOpen(false)}
           />
           <NavItem
-            href="#freelance"
-            label="freelance"
-            active={active === "freelance"}
-            color="neonGreen"
-            onClick={() => setIsOpen(false)}
-          />
-          <NavItem
             href="#landing"
-            label="Landing Pages"
+            label={t('nav.landingPages')}
             active={active === "landing"}
             color="neonGold"
             onClick={() => setIsOpen(false)}
           />
           <NavItem
             href="#academicos"
-            label="Academic"
+            label={t('nav.academic')}
             active={active === "academicos"}
             color="neonOrange"
             onClick={() => setIsOpen(false)}
           />
           <NavItem
             href="#outros"
-            label="Other Projects"
+            label={t('nav.otherProjects')}
             active={active === "outros"}
             color="neonRed"
             onClick={() => setIsOpen(false)}

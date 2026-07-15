@@ -3,8 +3,11 @@ export const projectsData = {
     {
       title: "InkMaster Studio",
       desc: "Uma interface imersiva voltada para o mercado de modificação corporal de luxo. Com um design dark agressivo e sofisticado, a plataforma prioriza o portfólio dos artistas.",
+      desc_en:
+        "An immersive interface aimed at the luxury body modification market. With an aggressive and sophisticated dark design, the platform prioritizes the artists' portfolios.",
       color: "neonPurple",
       category: "Outros",
+      category_en: "Others",
       link: "https://inkmaster-studio.vercel.app/",
       image: "/InkMaster_Home.png",
       techs: ["Nextjs", "TypeScript", "TailwindCSS"],
@@ -12,9 +15,13 @@ export const projectsData = {
     },
     {
       title: "Barbearia Corte Fino",
+      title_en: "Corte Fino Barbershop",
       desc: "Website institucional para barbearia com design moderno e responsivo",
+      desc_en:
+        "Institutional website for a barbershop with a modern and responsive design",
       color: "neonYellow",
       category: "Outros",
+      category_en: "Others",
       link: "https://barbershopcortefino.vercel.app/",
       image: "/home_corte_fino.png",
       techs: ["React", "TypeScript", "TailwindCSS"],
@@ -22,9 +29,13 @@ export const projectsData = {
     },
     {
       title: "Dashboard ETL - Auxílio Gás 2025",
+      title_en: "ETL Dashboard - Gas Aid 2025",
       desc: "Dashboard interativo para apresentação e análise de dados do programa Auxílio Gás, com foco em auditoria e mapeamento de beneficiários.",
+      desc_en:
+        "Interactive dashboard for presenting and analyzing data from the Gas Aid program, focusing on auditing and mapping beneficiaries.",
       color: "neonCyan",
       category: "Trabalho Acadêmico",
+      category_en: "Academic Work",
       image: "home_dashETL.png",
       link: "https://auxiliogasdash.vercel.app/",
       techs: [
@@ -42,9 +53,12 @@ export const projectsData = {
     {
       title: "Apex Capital — Private Banking & Web3",
       desc: "Landing Page institucional de alta conversão para o nicho de investimentos de alto padrão.",
+      desc_en:
+        "High-conversion institutional Landing Page for the high-end investment niche.",
       color: "neonBlue",
       soon: true,
       category: "Outros",
+      category_en: "Others",
       image: "",
       techs: ["Nextjs", "TypeScript", "TailwindCSS", "API REST"],
       code: "",
@@ -52,43 +66,25 @@ export const projectsData = {
     {
       title: "DevForge - SaaS Utility for Developers",
       desc: "Utilitário de teste de webhook e demais funcionalidades para desenvolvedores",
+      desc_en: "Webhook testing utility and other features for developers",
       color: "neonMagenta",
       soon: true,
       category: "Outros",
+      category_en: "Others",
       image: "",
       techs: ["Em discussão"],
       code: "",
-    }
-  ],
-
-  freelance: [
-    {
-      title: "LinkTree para Piscicultura",
-      desc: "Aplicação web moderna para apresentar catálogo de peixes, contatos e informações da piscicultura de forma simples e intuitiva",
-      color: "neonGreen",
-      link: "https://pisciculturamagraoalevinos.netlify.app/",
-      category: "Site Completo",
-      image: "home_fish.png",
-      techs: ["React", "TailwindCSS", "JavaScript"],
-      code: "https://github.com/Rayck4dev/piscicultura-linktree",
-    },
-    {
-      title: "Delícias no Pote 2.0",
-      desc: "Sistema de catálogo digital com painel administrativo e CRUD completo, permitindo gestão de produtos em tempo real",
-      color: "neonPink",
-      link: "https://deliciasnopoterm.netlify.app",
-      category: "Site Completo",
-      image: "/home_del.png",
-      techs: ["React", "Supabase", "TailwindCSS"],
-      code: "https://github.com/Rayck4dev/Cardapio-Digital_2.0",
     },
   ],
   landing: [
     {
       title: "InkMaster Studio",
       desc: "Uma interface imersiva voltada para o mercado de modificação corporal de luxo. Com um design dark agressivo e sofisticado, a plataforma prioriza o portfólio dos artistas.",
+      desc_en:
+        "An immersive interface aimed at the luxury body modification market. With an aggressive and sophisticated dark design, the platform prioritizes the artists' portfolios.",
       color: "neonPurple",
       category: "Outros",
+      category_en: "Others",
       link: "https://inkmaster-studio.vercel.app/",
       image: "/InkMaster_Home.png",
       techs: ["Nextjs", "TypeScript", "TailwindCSS"],
@@ -96,9 +92,13 @@ export const projectsData = {
     },
     {
       title: "Barbearia Corte Fino",
+      title_en: "Corte Fino Barbershop",
       desc: "Website institucional para barbearia com design moderno e responsivo",
+      desc_en:
+        "Institutional website for a barbershop with a modern and responsive design",
       color: "neonYellow",
       category: "Outros",
+      category_en: "Others",
       link: "https://barbershopcortefino.vercel.app/",
       image: "/home_corte_fino.png",
       techs: ["React", "TypeScript", "TailwindCSS"],
@@ -106,10 +106,13 @@ export const projectsData = {
     },
     {
       title: "Blog Elite Vougue",
+      title_en: "Elite Vougue Blog",
       desc: "Blog desenvolvido para treinar habilidades em HTML5, CSS3 e JS",
+      desc_en: "Blog developed to practice skills in HTML5, CSS3, and JS",
       color: "neonBlue",
       soon: false,
       category: "Landing Page",
+      category_en: "Landing Page",
       image: "/home_blog.png",
       techs: ["HTML5", "CSS3", "JavaScript"],
       code: "https://github.com/Rayck4dev/blog-EliteVougue",
@@ -119,9 +122,13 @@ export const projectsData = {
   academicos: [
     {
       title: "Dashboard ETL - Auxílio Gás 2025",
-      desc: "Dashboard interativo para apresentação e análise de dados do programa Auxílio Gás, com foco em auditoria e mapeamento de beneficiários.'",
+      title_en: "ETL Dashboard - Gas Aid 2025",
+      desc: "Dashboard interativo para apresentação e análise de dados do programa Auxílio Gás, com foco em auditoria e mapeamento de beneficiários.",
+      desc_en:
+        "Interactive dashboard for presenting and analyzing data from the Gas Aid program, focusing on auditing and mapping beneficiaries.",
       color: "neonCyan",
       category: "Trabalho Acadêmico",
+      category_en: "Academic Work",
       image: "home_dashETL.png",
       link: "https://auxiliogasdash.vercel.app/",
       techs: [
@@ -137,8 +144,11 @@ export const projectsData = {
     {
       title: "ShopSmart App",
       desc: "Aplicativo mobile para gestão de compras no supermercado, desenvolvido para a disciplina de Desenvolvimento Mobile",
+      desc_en:
+        "Mobile application for supermarket shopping management, developed for the Mobile Development course",
       color: "neonYellow",
       category: "Trabalho Acadêmico",
+      category_en: "Academic Work",
       image: "shopsmartlogoofc.png",
       techs: [
         "Mobile",
@@ -153,8 +163,11 @@ export const projectsData = {
     {
       title: "Eventix",
       desc: "Plataforma acadêmica inspirada no Sympla, com 2 versões desencolvida para as matérias de DAPI e FRONTEND-FRAMEWORKS",
+      desc_en:
+        "Academic platform inspired by Sympla, with 2 versions developed for the DAPI and FRONTEND-FRAMEWORKS courses",
       color: "neonOrange",
       category: "Trabalho Acadêmico",
+      category_en: "Academic Work",
       image: "/home_Eventix.png",
       techs: ["CSS3", "HTML5", "JavaScript", "React", "Supabase", "API REST"],
       code: "https://github.com/Rayck4dev/Projeto_Eventix",
@@ -162,18 +175,25 @@ export const projectsData = {
     {
       title: "Delícias no Pote 1.0",
       desc: "Primeira versão do catálogo digital, Delícias no Pote desenvolvida como projeto de extensão",
+      desc_en:
+        "First version of the digital catalog, Delícias no Pote, developed as an extension project",
       color: "neonPink",
       link: "https://deliciasnopote.netlify.app/",
       category: "Landing Page",
+      category_en: "Landing Page",
       image: "/home_del1.png",
       techs: ["HTML5", "CSS3", "JavaScript"],
       code: "https://github.com/Rayck4dev/Projeto_Cardapio-Digital",
     },
     {
       title: "Sistema de Pedágio",
+      title_en: "Toll System",
       desc: "Aplicação em Java que simula o funcionamento de um pedágio, com lógica de cobrança e relatórios, desenvolvida para a disciplina de POO",
+      desc_en:
+        "Java application simulating a toll booth, with billing logic and reports, developed for the OOP course",
       color: "neonOrange",
       category: "Trabalho Acadêmico",
+      category_en: "Academic Work",
       image: "/code_java.png",
       techs: ["Java"],
       code: "https://github.com/Rayck4dev/Atividades-Java_Facul/tree/Trabalho-Ped%C3%A1gio-2025",
@@ -182,21 +202,56 @@ export const projectsData = {
 
   outros: [
     {
+      title: "LinkTree para Piscicultura",
+      title_en: "LinkTree for Fish Farming",
+      desc: "Aplicação web moderna para apresentar catálogo de peixes, contatos e informações da piscicultura de forma simples e intuitiva",
+      desc_en:
+        "Modern web application to present a fish catalog, contacts, and fish farming information in a simple and intuitive way",
+      color: "neonGreen",
+      link: "https://pisciculturamagraoalevinos.netlify.app/",
+      category: "Site Completo",
+      category_en: "Full Website",
+      image: "home_fish.png",
+      techs: ["React", "TailwindCSS", "JavaScript"],
+      code: "https://github.com/Rayck4dev/piscicultura-linktree",
+    },
+    {
+      title: "Delícias no Pote 2.0",
+      desc: "Sistema de catálogo digital com painel administrativo e CRUD completo, permitindo gestão de produtos em tempo real",
+      desc_en:
+        "Digital catalog system with administrative panel and full CRUD, allowing real-time product management",
+      color: "neonPink",
+      link: "https://deliciasnopoterm.netlify.app",
+      category: "Site Completo",
+      category_en: "Full Website",
+      image: "/home_del.png",
+      techs: ["React", "Supabase", "TailwindCSS"],
+      code: "https://github.com/Rayck4dev/Cardapio-Digital_2.0",
+    },
+    {
       title: "Dashboard de Filmes",
+      title_en: "Movies Dashboard",
       desc: "Dashboard criado para aprendizado durante a Imersão Alura, com dados reais da API TMDb",
+      desc_en:
+        "Dashboard created for learning during the Alura Immersion, with real data from the TMDb API",
       color: "neonRed",
       link: "https://dashboard-filmes.streamlit.app/",
       category: "Outros",
+      category_en: "Others",
       image: "home_dash.png",
       techs: ["Python", "API REST", "Pandas", "Plotly", "Streamlit"],
       code: "https://github.com/Rayck4dev/Dashboard_filmes",
     },
     {
       title: "Portfólio Dev",
+      title_en: "Dev Portfolio",
       desc: "Site pessoal interativo para apresentar meus projetos e evolução como desenvolvedor, com design futurista e animações dinâmicas",
+      desc_en:
+        "Interactive personal website to showcase my projects and evolution as a developer, with futuristic design and dynamic animations",
       color: "neonPurple",
       link: "https://portfoliorayckacastro.netlify.app/",
       category: "Site Completo",
+      category_en: "Full Website",
       image: "/home_port.png",
       techs: ["React", "TailwindCSS"],
     },

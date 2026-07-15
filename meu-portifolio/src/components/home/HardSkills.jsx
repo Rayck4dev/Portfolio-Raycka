@@ -6,8 +6,10 @@ import {
   FaCloudUploadAlt,
   FaTools,
 } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 export default function HardSkills() {
+  const { t } = useTranslation();
   return (
     <section
       id="hardskills"
@@ -20,44 +22,43 @@ export default function HardSkills() {
       <Particles />
 
       <h2 className="relative z-10 text-3xl sm:text-4xl lg:text-5xl font-audiowide text-neonYellow mb-10 drop-shadow-[0_0_15px_#FFFF33] animate-fadeUp">
-        Hard Skills
+        {t('hardSkills.title')}
       </h2>
 
       <p className="text-white/70 text-center max-w-2xl font-bricolage text-sm sm:text-base mb-12 px-4">
-        Competências técnicas que aplico para construir aplicações modernas,
-        eficientes e bem estruturadas
+        {t('hardSkills.desc')}
       </p>
 
       <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-10 w-full max-w-5xl">
         <SkillCard
           icon={<FaCode />}
-          title="Desenvolvimento Front-End"
-          desc="Criação de interfaces modernas, responsivas e acessíveis"
+          title={t('hardSkills.frontend')}
+          desc={t('hardSkills.frontendDesc')}
         />
         <SkillCard
           icon={<FaServer />}
-          title="Desenvolvimento Back-End"
-          desc="APIs REST, lógica de negócio e integrações"
+          title={t('hardSkills.backend')}
+          desc={t('hardSkills.backendDesc')}
         />
         <SkillCard
           icon={<FaDatabase />}
-          title="Banco de Dados"
-          desc="Modelagem, consultas SQL e integração com aplicações"
+          title={t('hardSkills.database')}
+          desc={t('hardSkills.databaseDesc')}
         />
         <SkillCard
           icon={<FaCubes />}
-          title="Arquitetura de Componentes"
-          desc="Organização, reuso e escalabilidade no front-end"
+          title={t('hardSkills.architecture')}
+          desc={t('hardSkills.architectureDesc')}
         />
         <SkillCard
           icon={<FaCloudUploadAlt />}
-          title="Deploy & Hospedagem"
-          desc="Publicação de aplicações em produção"
+          title={t('hardSkills.deploy')}
+          desc={t('hardSkills.deployDesc')}
         />
         <SkillCard
           icon={<FaTools />}
-          title="Boas Práticas"
-          desc="Versionamento, clean code e otimização de performance"
+          title={t('hardSkills.bestPractices')}
+          desc={t('hardSkills.bestPracticesDesc')}
         />
       </div>
     </section>

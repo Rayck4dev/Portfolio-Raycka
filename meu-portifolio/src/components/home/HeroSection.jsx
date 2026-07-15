@@ -5,9 +5,18 @@ import BinaryBackground from "@/components/ui/BinaryBackground";
 import FadeIn from "@/components/ui/FadeIn";
 import TypingText from "@/components/ui/TypingText";
 import { FiDownload } from "react-icons/fi"; 
+import { useTranslation } from "react-i18next";
 
 export default function HeroSection() {
+  const { t, i18n } = useTranslation();
   const [showHead, setShowHead] = useState(false);
+  const isEnglish = i18n.language?.startsWith("en");
+  const resumeHref = isEnglish
+    ? "/Curriculo_Raycka_Castro_FullStack_En.pdf"
+    : "/Curriculo_RayckaCastro_FullStack.pdf";
+  const resumeDownloadName = isEnglish
+    ? "Curriculo_Raycka_Castro_FullStack_En.pdf"
+    : "Curriculo_RayckaCastro_FullStack.pdf";
 
   useEffect(() => {
     const timer = setTimeout(() => setShowHead(true), 100);
@@ -27,55 +36,54 @@ export default function HeroSection() {
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
               </span>
               <span className="text-[10px] font-orbitron font-bold text-emerald-500 tracking-[0.2em] uppercase">
-                Disponível para novos projetos
+                {t('hero.available')}
               </span>
             </div>
 
             <h2 className="font-orbitron text-slate-500 text-xs md:text-sm tracking-[0.5em] mb-4 uppercase">
-              Especialista em Interfaces & Sistemas
+              {t('hero.specialist')}
             </h2>
 
             <h1 className="font-bricolage text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-[1.15] mb-6 tracking-tight">
-              Sua marca merece um <br />
+              {t('hero.brandDeserves')} <br />
               <div className="h-[1.2em] w-full flex justify-center md:justify-start items-center text-neonCyan drop-shadow-[0_0_15px_rgba(64,224,208,0.2)]">
                 <TypingText
                   texts={[
-                    "Site Moderno",
-                    "Design Responsivo",
-                    "Sistema de Elite",
+                    t('hero.typing.modernSite'),
+                    t('hero.typing.responsiveDesign'),
+                    t('hero.typing.eliteSystem'),
                   ]}
                 />
               </div>
             </h1>
 
             <p className="max-w-lg text-slate-400 font-light text-base md:text-lg leading-relaxed mb-8">
-              Desenvolvimento de Sistemas Fullstack, Aplicações mobile e
-              Websites com a engenharia e identidade de elite da{" "}
-              <strong className="text-neonPurple font-bold">DevLab</strong>.
+              {t('hero.description')}
+              <strong className="text-neonPurple font-bold">{t('hero.devlab')}</strong>.
             </p>
 
             <div className="flex flex-col sm:flex-row flex-wrap gap-4 w-full sm:w-auto">
               <Link
                 to="/projects"
-                className="bg-neonPurple text-white font-audiowide text-xs tracking-wider px-6 py-4 rounded-2xl hover:shadow-[0_0_25px_rgba(160,32,240,0.5)] transition-all active:scale-95 flex items-center justify-center text-center w-full sm:w-auto"
+                className="bg-neonPurple text-white font-audiowide text-xs tracking-wider px-6 py-4 rounded-2xl hover:shadow-[0_0_25px_rgba(160,32,240,0.5)] transition-dall active:scale-95 flex items-center justify-center text-center w-full sm:w-auto"
               >
-                VER PROJETOS
+                {t('hero.viewProjects')}
               </Link>
 
               <a
                 href="#contact"
                 className="border-2 border-slate-800 hover:border-neonCyan text-slate-300 hover:text-white px-6 py-4 rounded-2xl transition-all duration-300 font-audiowide text-xs tracking-wider flex items-center justify-center text-center w-full sm:w-auto"
               >
-                FALE COMIGO
+                {t('hero.contactMe')}
               </a>
 
               <a
-                href="/Curriculo_RayckaCastro_FullStack.pdf"
-                download="Curriculo_RayckaCastro_FullStack.pdf"
+                href={resumeHref}
+                download={resumeDownloadName}
                 className="border-2 border-slate-800 hover:border-neonPink text-slate-300 hover:text-white px-6 py-4 rounded-2xl transition-all duration-300 font-audiowide text-xs tracking-wider flex items-center justify-center gap-2 text-center w-full sm:w-auto cursor-pointer group"
               >
                 <FiDownload className="text-base text-slate-400 group-hover:text-neonPink transition-colors duration-300" />
-                <span>CURRÍCULO</span>
+                <span>{t('hero.resume')}</span>
               </a>
             </div>
           </div>

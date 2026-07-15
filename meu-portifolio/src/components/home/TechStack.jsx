@@ -29,8 +29,10 @@ import {
 } from "react-icons/si";
 
 import { DiDatabase } from "react-icons/di";
+import { useTranslation } from "react-i18next";
 
 export default function TechStack() {
+  const { t } = useTranslation();
   return (
     <section
       id="technologies"
@@ -43,12 +45,11 @@ export default function TechStack() {
       <div className="absolute inset-0 pointer-events-none opacity-10 bg-[linear-gradient(transparent_95%,rgba(255,255,255,0.1)_100%)] bg-[length:100%_4px]"></div>
 
       <h2 className="relative z-10 text-3xl sm:text-4xl lg:text-5xl font-audiowide text-neonPurple mb-10 drop-shadow-[0_0_15px_#a855f7] animate-fadeUp">
-        Technologies
+        {t('techStack.title')}
       </h2>
 
       <p className="text-white/70 text-center max-w-2xl font-bricolage text-base mb-12 px-4">
-        Tecnologias que estudo e aplico para construir interfaces modernas,
-        sistemas eficientes e aplicações completas
+        {t('techStack.desc')}
       </p>
 
       <Particles />
@@ -56,7 +57,7 @@ export default function TechStack() {
       <div className="relative z-10 flex flex-col gap-12 sm:gap-16 lg:gap-20 w-full max-w-5xl">
         {/* FRONT-END */}
         <Category
-          title="Front-End"
+          title={t('techStack.frontend')}
           color="neonPink"
           items={[
             { name: "HTML", icon: <FaHtml5 /> },
@@ -72,7 +73,7 @@ export default function TechStack() {
 
         {/* BACK-END */}
         <Category
-          title="Back-End"
+          title={t('techStack.backend')}
           color="neonBlue"
           items={[
             { name: "Node.js", icon: <FaNodeJs /> },
@@ -86,7 +87,7 @@ export default function TechStack() {
 
         {/* DATA ENGINEERING & INFRASTRUCTURE */}
         <Category
-          title="Data & Infrastructure"
+          title={t('techStack.dataInfra')}
           color="neonYellow"
           items={[
             { name: "Apache Hop", icon: <DiDatabase /> },
@@ -97,7 +98,7 @@ export default function TechStack() {
 
         {/* DATABASES */}
         <Category
-          title="Databases"
+          title={t('techStack.databases')}
           color="neonGreen"
           items={[
             { name: "MySQL", icon: <SiMysql /> },
@@ -107,7 +108,7 @@ export default function TechStack() {
 
         {/* DEPLOY */}
         <Category
-          title="Deploy"
+          title={t('techStack.deploy')}
           color="neonCyan"
           items={[
             { name: "Vercel", icon: <SiVercel /> },
@@ -117,7 +118,7 @@ export default function TechStack() {
 
         {/* TOOLS */}
         <Category
-          title="Tools & Others"
+          title={t('techStack.tools')}
           color="neonRed"
           items={[
             { name: "Git / GitHub", icon: <FaGitAlt /> },

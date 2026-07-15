@@ -6,8 +6,10 @@ import {
   FaBolt,
   FaClipboardList,
 } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 export default function SoftSkills() {
+  const { t } = useTranslation();
   return (
     <section
       id="softskills"
@@ -20,21 +22,20 @@ export default function SoftSkills() {
       <Particles />
 
       <h2 className="relative z-10 text-3xl sm:text-4xl lg:text-5xl font-audiowide text-neonBlue mb-10 drop-shadow-[0_0_15px_#00C2FF] animate-fadeUp">
-        Soft Skills
+        {t('softSkills.title')}
       </h2>
 
       <p className="text-white/70 text-center max-w-2xl font-bricolage text-sm sm:text-base mb-12 px-4">
-        Competências comportamentais que fortalecem minha atuação como
-        desenvolvedora e potencializam cada projeto
+        {t('softSkills.desc')}
       </p>
 
       <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-10 w-full max-w-5xl">
-        <SkillCard icon={<FaComments />} name="Comunicação" />
-        <SkillCard icon={<FaClipboardList />} name="Organização" />
-        <SkillCard icon={<FaPuzzlePiece />} name="Resolução de Problemas" />
-        <SkillCard icon={<FaUsers />} name="Trabalho em Equipe" />
-        <SkillCard icon={<FaSync />} name="Adaptabilidade" />
-        <SkillCard icon={<FaBolt />} name="Proatividade" />
+        <SkillCard icon={<FaComments />} name={t('softSkills.communication')} />
+        <SkillCard icon={<FaClipboardList />} name={t('softSkills.organization')} />
+        <SkillCard icon={<FaPuzzlePiece />} name={t('softSkills.problemSolving')} />
+        <SkillCard icon={<FaUsers />} name={t('softSkills.teamwork')} />
+        <SkillCard icon={<FaSync />} name={t('softSkills.adaptability')} />
+        <SkillCard icon={<FaBolt />} name={t('softSkills.proactivity')} />
       </div>
     </section>
   );
